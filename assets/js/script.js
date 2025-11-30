@@ -19,13 +19,25 @@ if ("IntersectionObserver" in window) {
   revealElements.forEach(el => el.classList.add("visible"));
 }
 
-// Accordion logic
+// Accordion logic with smooth slide
 document.querySelectorAll(".project-accordion").forEach(item => {
   const header = item.querySelector(".accordion-header");
-  if (!header) return;
+  const body = item.querySelector(".accordion-body");
+  if (!header || !body) return;
+
+  // Ensure closed state
+  body.style.maxHeight = "0px";
 
   header.addEventListener("click", () => {
-    item.classList.toggle("open");
+    const isOpen = item.classList.contains("open");
+
+    if (isOpen) {
+      body.style.maxHeight = "0px";
+      item.classList.remove("open");
+    } else {
+      body.style.maxHeight = body.scrollHeight + "px";
+      item.classList.add("open");
+    }
   });
 });
 
@@ -40,9 +52,14 @@ document.querySelectorAll(".featured-card").forEach(card => {
     );
     if (!targetAccordion) return;
 
+    const body = targetAccordion.querySelector(".accordion-body");
+    if (!body) return;
+
     // Open it if not already
-    if (!targetAccordion.classList.contains("open")) {
+    const isOpen = targetAccordion.classList.contains("open");
+    if (!isOpen) {
       targetAccordion.classList.add("open");
+      body.style.maxHeight = body.scrollHeight + "px";
     }
 
     const rect = targetAccordion.getBoundingClientRect();
@@ -57,17 +74,17 @@ document.querySelectorAll(".featured-card").forEach(card => {
 
 // Language toggle logic
 const langToggle = document.getElementById("lang-toggle");
-const body = document.body;
+const bodyEl = document.body;
 
 const savedLang = localStorage.getItem("lang") || "en";
 if (savedLang === "fr") {
-  body.classList.add("lang-fr-active");
+  bodyEl.classList.add("lang-fr-active");
 }
 
 if (langToggle) {
   langToggle.addEventListener("click", () => {
-    body.classList.toggle("lang-fr-active");
-    const lang = body.classList.contains("lang-fr-active") ? "fr" : "en";
+    bodyEl.classList.toggle("lang-fr-active");
+    const lang = bodyEl.classList.contains("lang-fr-active") ? "fr" : "en";
     localStorage.setItem("lang", lang);
   });
 }
@@ -81,6 +98,51 @@ if (timeline) {
     timeline.scrollLeft += e.deltaY * 0.6;
   });
 }
+
+// Lightbox for gallery thumbnails
+const lightbox = document.getElementById("lightbox");
+const lightboxImg = document.getElementById("lightbox-img");
+const lightboxBackdrop = lightbox ? lightbox.querySelector(".lightbox-backdrop") : null;
+
+function openLightbox(src, alt) {
+  if (!lightbox || !lightboxImg) return;
+  lightboxImg.src = src;
+  lightboxImg.alt = alt || "";
+  lightbox.classList.add("visible");
+}
+
+function closeLightbox() {
+  if (!lightbox || !lightboxImg) return;
+  lightbox.classList.remove("visible");
+  lightboxImg.src = "";
+  lightboxImg.alt = "";
+}
+
+document.querySelectorAll(".project-thumb").forEach(img => {
+  img.addEventListener("click", () => {
+    const fullSrc = img.getAttribute("data-full") || img.src;
+    const alt = img.alt || "";
+    openLightbox(fullSrc, alt);
+  });
+});
+
+if (lightboxBackdrop) {
+  lightboxBackdrop.addEventListener("click", closeLightbox);
+}
+
+if (lightbox) {
+  lightbox.addEventListener("click", e => {
+    if (e.target === lightbox) {
+      closeLightbox();
+    }
+  });
+}
+
+document.addEventListener("keydown", e => {
+  if (e.key === "Escape") {
+    closeLightbox();
+  }
+});
 
 // Footer year
 const yearSpan = document.getElementById("year");
