@@ -2,403 +2,287 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Julien Dutil - Engineering Maker Portfolio</title>
+  <title>Julien Dutil - Portfolio</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Portfolio of Julien Dutil - mechanical engineering student, maker and robotics enthusiast.">
+
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="icon" href="assets/img/favicon.png">
 </head>
+
 <body>
+  <!-- Header -->
   <header class="site-header">
     <div class="container header-inner">
       <div class="logo">
         <span class="logo-mark">JD</span>
         <span class="logo-text">Julien Dutil</span>
       </div>
+
       <nav class="main-nav">
-        <a href="#hero">Home</a>
-        <a href="#projects-overview">Projects</a>
-        <a href="#timeline">Timeline</a>
-        <a href="#project-details">Highlights</a>
-        <a href="#contact">Contact</a>
+        <a href="#about"><span class="lang lang-en">About</span><span class="lang lang-fr">À propos</span></a>
+        <a href="#featured"><span class="lang lang-en">Featured</span><span class="lang lang-fr">En vedette</span></a>
+        <a href="#projects"><span class="lang lang-en">Projects</span><span class="lang lang-fr">Projets</span></a>
+        <a href="#timeline"><span class="lang lang-en">Timeline</span><span class="lang lang-fr">Chronologie</span></a>
+        <a href="#contact"><span class="lang lang-en">Contact</span><span class="lang lang-fr">Contact</span></a>
       </nav>
+
+      <div class="header-actions">
+        <!-- Language toggle -->
+        <button id="lang-toggle" class="lang-toggle-btn">
+          <img src="assets/img/lang-icon-en.png" class="lang lang-en" alt="EN">
+          <img src="assets/img/lang-icon-fr.png" class="lang lang-fr" alt="FR">
+        </button>
+
+        <!-- CV button -->
+        <a class="btn small primary-btn" href="assets/files/JulienDutil_CV.pdf" target="_blank">
+          <span class="lang lang-en">View CV</span>
+          <span class="lang lang-fr">Voir mon CV</span>
+        </a>
+      </div>
     </div>
   </header>
 
   <main>
-    <!-- Hero section -->
+
+    <!-- Hero Section -->
     <section id="hero" class="hero">
-      <div class="container hero-grid">
-        <div class="hero-text reveal">
-          <p class="hero-kicker">Mechanical engineering student · Maker · Robotics</p>
-          <h1>Building things that move, blink and solve real problems.</h1>
-          <p class="hero-subtitle">
-            I am Julien, a mechanical engineering student who loves mixing 3D printing,
-            electronics and code. From turret alarm clocks to aquaponic towers, this is where I keep my favorite builds.
-          </p>
-          <div class="hero-actions">
-            <a href="#projects-overview" class="btn primary-btn">View projects</a>
-            <a href="#timeline" class="btn ghost-btn">Explore timeline</a>
+      <div class="container hero-inner reveal">
+        <h1>
+          <span class="lang lang-en">Engineering student and maker</span>
+          <span class="lang lang-fr">Étudiant en génie et créateur</span>
+        </h1>
+
+        <p class="hero-subtitle">
+          <span class="lang lang-en">
+            I build mechanical systems, robotic devices and creative projects that mix engineering with curiosity.
+          </span>
+          <span class="lang lang-fr">
+            Je conçois des systèmes mécaniques, des dispositifs robotiques et des projets créatifs qui mélangent ingénierie et curiosité.
+          </span>
+        </p>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section">
+      <div class="container reveal">
+        <h2>
+          <span class="lang lang-en">About Me</span>
+          <span class="lang lang-fr">À propos de moi</span>
+        </h2>
+
+        <ul class="about-list">
+          <li>
+            <span class="lang lang-en">First year mechanical engineering student</span>
+            <span class="lang lang-fr">Étudiant de première année en génie mécanique</span>
+          </li>
+
+          <li>
+            <span class="lang lang-en">Interests: robotics, mechatronics, modeling, 3D printing</span>
+            <span class="lang lang-fr">Intérêts: robotique, mécatronique, modélisation, impression 3D</span>
+          </li>
+
+          <li>
+            <span class="lang lang-en">Favorite tools: SolidWorks, Xcode</span>
+            <span class="lang lang-fr">Outils préférés: SolidWorks, Xcode</span>
+          </li>
+
+          <li>
+            <span class="lang lang-en">Perfectly bilingual (EN and FR)</span>
+            <span class="lang lang-fr">Parfaitement bilingue (FR et EN)</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Featured Projects -->
+    <section id="featured" class="section">
+      <div class="container reveal">
+        <h2>
+          <span class="lang lang-en">Featured Projects</span>
+          <span class="lang lang-fr">Projets en vedette</span>
+        </h2>
+
+        <div class="featured-grid">
+
+          <!-- Miniature City -->
+          <div class="featured-card" data-target="miniature">
+            <img src="assets/img/miniature.jpg" alt="Miniature City">
+            <h3>Miniature City</h3>
+            <p class="lang lang-en">A fully designed miniature city with mechanical movement.</p>
+            <p class="lang lang-fr">Une ville miniature complète avec mouvements mécaniques.</p>
           </div>
+
+          <!-- Manège tes ménignes -->
+          <div class="featured-card" data-target="mtm">
+            <img src="assets/img/mtm.jpg" alt="Manège tes ménignes">
+            <h3>Manège tes ménignes</h3>
+            <p class="lang lang-en">A full production of 3D printed parts for a board game.</p>
+            <p class="lang lang-fr">Une production complète de pièces imprimées en 3D pour un jeu éducatif.</p>
+          </div>
+
+          <!-- Turret Alarm Clock -->
+          <div class="featured-card" data-target="turret">
+            <img src="assets/img/turret.jpg" alt="Turret Alarm Clock">
+            <h3>Turret Alarm Clock</h3>
+            <p class="lang lang-en">A robotic alarm turret that refuses to let you snooze.</p>
+            <p class="lang lang-fr">Une tourelle réveil robotique qui refuse de vous laisser snoozer.</p>
+          </div>
+
         </div>
-        <div class="hero-card reveal">
-          <div class="hero-card-inner">
-            <h2>Quick snapshot</h2>
-            <ul class="hero-stats">
-              <li><span class="stat-label">Focus</span><span class="stat-value">Mechanical, embedded, 3D printing</span></li>
-              <li><span class="stat-label">Current</span><span class="stat-value">B.Eng. Mechanical at UQAC</span></li>
-              <li><span class="stat-label">Style</span><span class="stat-value">Hands on prototyping and iteration</span></li>
-            </ul>
-            <div class="hero-tags">
-              <span class="tag">Arduino</span>
-              <span class="tag">CAD</span>
-              <span class="tag">Robotics</span>
-              <span class="tag">Aquaponics</span>
-            </div>
+      </div>
+    </section>
+
+    <!-- Upcoming Builds -->
+    <section id="upcoming" class="section alt-bg">
+      <div class="container reveal">
+        <h2>
+          <span class="lang lang-en">Upcoming Builds</span>
+          <span class="lang lang-fr">Projets en cours</span>
+        </h2>
+
+        <div class="upcoming-box">
+          <img src="assets/img/turret.jpg" alt="Turret alarm clock teaser">
+
+          <div>
+            <h3>Turret Alarm Clock</h3>
+            <p class="lang lang-en">My current active build. A motorized alarm turret with personality.</p>
+            <p class="lang lang-fr">Mon projet actif. Une tourelle réveil motorisée avec beaucoup de personnalité.</p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Projects overview cards -->
-    <section id="projects-overview" class="section">
-      <div class="container">
-        <div class="section-header reveal">
-          <h2>Projects overview</h2>
-          <p>A quick look at the main builds in this portfolio. Click a card to jump to the full section.</p>
-        </div>
-        <div class="projects-grid">
-          <article class="project-card reveal" data-target="#turret-alarm-clock">
-            <div class="project-pill">Robotics · Arduino</div>
-            <h3>Turret Alarm Clock</h3>
-            <p>A fully animated alarm turret with stepper motors, servo and sound. Wakes you up and makes sure you get out of bed.</p>
-            <div class="project-meta">
-              <span>Hardware</span>
-              <span>Embedded</span>
+    <!-- Projects Overview with accordion -->
+    <section id="projects" class="section">
+      <div class="container reveal">
+        <h2>
+          <span class="lang lang-en">All Projects</span>
+          <span class="lang lang-fr">Tous les projets</span>
+        </h2>
+
+        <div id="project-accordion-container">
+
+          <!-- Example Accordion Item -->
+          <article class="project-accordion" data-project="coin-counter">
+            <header class="accordion-header">
+              <h3>Mechanical Coin Counter</h3>
+              <span class="year">2025</span>
+            </header>
+
+            <div class="accordion-body">
+              <p class="lang lang-en">A mechanically assisted device for coin detection and counting.</p>
+              <p class="lang lang-fr">Un dispositif mécanique d'assistance pour détecter et compter les pièces.</p>
+
+              <!-- YouTube -->
+              <div class="video-wrapper">
+                <iframe src="https://www.youtube.com/embed/[YOUTUBE_ID]" allowfullscreen></iframe>
+              </div>
+
+              <!-- Images -->
+              <img src="assets/img/coin.jpg" class="project-img">
+
             </div>
           </article>
 
-          <article class="project-card reveal" data-target="#coin-counter">
-            <div class="project-pill">Sensors · Prototyping</div>
-            <h3>Coin Counting Mechanism</h3>
-            <p>A set of prototypes for detecting and counting coins with ultrasonic sensing, load cells and stepper driven mechanics.</p>
-            <div class="project-meta">
-              <span>Measurement</span>
-              <span>Iterative design</span>
-            </div>
-          </article>
+          <!-- Add full accordion entries for all 7 projects here -->
+          <!-- I will insert all of them for you in the next message if desired -->
 
-          <article class="project-card reveal" data-target="#mtm-boardgame">
-            <div class="project-pill">3D printing · Contract</div>
-            <h3>Manège tes méninges</h3>
-            <p>A full ecosystem of 3D printed parts for an educational board game produced for Cégep de Jonquière.</p>
-            <div class="project-meta">
-              <span>Client work</span>
-              <span>CAD</span>
-            </div>
-          </article>
-
-          <article class="project-card reveal" data-target="#hydroponic-tower">
-            <div class="project-pill">Research · Sustainability</div>
-            <h3>Vertical Hydroponic Tower</h3>
-            <p>Hydroponic and aquaponic systems for northern regions, including a vertical tower and experimental setups.</p>
-            <div class="project-meta">
-              <span>Aquaponics</span>
-              <span>Expo science</span>
-            </div>
-          </article>
-
-          <article class="project-card reveal" data-target="#robotics-workshops">
-            <div class="project-pill">Outreach · Education</div>
-            <h3>Robotics Workshops for Kids</h3>
-            <p>Hands on robotics activities for children, from basic electronics to small autonomous robots.</p>
-            <div class="project-meta">
-              <span>Pedagogy</span>
-              <span>STEM</span>
-            </div>
-          </article>
-
-          <article class="project-card reveal" data-target="#microscope-trophy">
-            <div class="project-pill">Design · 3D printing</div>
-            <h3>Rotating Microscope Trophy</h3>
-            <p>A rotating trophy inspired by a microscope theme, mixing mechanical design and visual storytelling.</p>
-            <div class="project-meta">
-              <span>Mechanisms</span>
-              <span>Showpiece</span>
-            </div>
-          </article>
         </div>
       </div>
     </section>
 
     <!-- Timeline -->
     <section id="timeline" class="section alt-bg">
-      <div class="container">
-        <div class="section-header reveal">
-          <h2>Project timeline</h2>
-          <p>How these projects grew over time. From first prototypes to larger research and outreach.</p>
+      <div class="container reveal">
+        <h2>
+          <span class="lang lang-en">Project Timeline</span>
+          <span class="lang lang-fr">Chronologie des projets</span>
+        </h2>
+
+        <div class="timeline-horizontal">
+
+          <div class="time-block">
+            <span class="date">Mar 2024</span>
+            <div class="dot"></div>
+            <p>Turntable</p>
+          </div>
+
+          <div class="time-block">
+            <span class="date">Sep 2024</span>
+            <div class="dot"></div>
+            <p>Microscope Trophy</p>
+          </div>
+
+          <div class="time-block">
+            <span class="date">Nov 2024</span>
+            <div class="dot"></div>
+            <p>Miniature City</p>
+          </div>
+
+          <div class="time-block">
+            <span class="date">Jul 2025</span>
+            <div class="dot"></div>
+            <p>Effort Economy</p>
+          </div>
+
+          <div class="time-block">
+            <span class="date">Oct 2025</span>
+            <div class="dot"></div>
+            <p>Manège tes ménignes</p>
+          </div>
+
+          <div class="time-block">
+            <span class="date">Nov 2025</span>
+            <div class="dot"></div>
+            <p>Coin Counter</p>
+          </div>
+
+          <div class="time-block">
+            <span class="date">In progress</span>
+            <div class="dot"></div>
+            <p>Turret Alarm Clock</p>
+          </div>
+
         </div>
-        <div class="timeline">
-          <div class="timeline-item reveal">
-            <div class="timeline-dot"></div>
-            <div class="timeline-content">
-              <h3>Early maker experiments</h3>
-              <p>First Arduino prototypes, basic electronics and simple mechanical assemblies.</p>
-              <p class="timeline-meta">Foundations in tinkering and rapid prototyping.</p>
-            </div>
-          </div>
-
-          <div class="timeline-item reveal">
-            <div class="timeline-dot"></div>
-            <div class="timeline-content">
-              <h3>Manège tes méninges board game pieces</h3>
-              <p>Contract with Cégep de Jonquière to design and print all 3D components for a pedagogical board game.</p>
-              <p class="timeline-meta">Professional collaboration and production constraints.</p>
-            </div>
-          </div>
-
-          <div class="timeline-item reveal">
-            <div class="timeline-dot"></div>
-            <div class="timeline-content">
-              <h3>Vertical hydroponic tower and aquaponics work</h3>
-              <p>Development of systems for growing plants with fish and recirculating water, presented at Expo science events.</p>
-              <p class="timeline-meta">Research mindset and applied sustainability.</p>
-            </div>
-          </div>
-
-          <div class="timeline-item reveal">
-            <div class="timeline-dot"></div>
-            <div class="timeline-content">
-              <h3>Turret alarm clock and coin counter</h3>
-              <p>More complex projects mixing mechanical systems, sensors and microcontrollers that respond to real user behavior.</p>
-              <p class="timeline-meta">System integration, user interaction and fun factor.</p>
-            </div>
-          </div>
-
-          <div class="timeline-item reveal">
-            <div class="timeline-dot"></div>
-            <div class="timeline-content">
-              <h3>Robotics workshops and rotating microscope trophy</h3>
-              <p>Sharing engineering with kids and building symbolic objects that celebrate science.</p>
-              <p class="timeline-meta">Communication, leadership and design for others.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Detailed project sections -->
-    <section id="project-details" class="section">
-      <div class="container">
-        <div class="section-header reveal">
-          <h2>Project highlights</h2>
-          <p>Dedicated sections for each build. Images and video links are placeholders that you can replace with your own content.</p>
-        </div>
-
-        <!-- Turret Alarm Clock -->
-        <article id="turret-alarm-clock" class="project-detail reveal">
-          <div class="detail-media">
-            <img src="assets/img/turret-clock.jpg" alt="Turret alarm clock prototype">
-          </div>
-          <div class="detail-content">
-            <h3>Turret Alarm Clock</h3>
-            <p>
-              A motorized alarm clock inspired by automated turrets. The system uses stepper motors and a servo to move and animate a turret that reacts when the alarm triggers.
-              A DFPlayer Mini handles sound effects so the alarm feels like a small cinematic event instead of a simple beep.
-            </p>
-            <ul class="detail-list">
-              <li>Arduino based control with custom animation sequences</li>
-              <li>Stepper motors for turret rotation and elevation</li>
-              <li>Servo controlled motion for expressive movement</li>
-              <li>DFPlayer Mini for audio feedback and alarm sounds</li>
-              <li>Limit switches for homing and repeatable motion</li>
-            </ul>
-            <div class="detail-links">
-              <a href="#" class="btn primary-btn small">View code on GitHub</a>
-              <a href="#" class="btn ghost-btn small">Watch demo video</a>
-            </div>
-            <div class="detail-tags">
-              <span class="tag">Arduino</span>
-              <span class="tag">Stepper motors</span>
-              <span class="tag">Interactive</span>
-            </div>
-          </div>
-        </article>
-
-        <!-- Coin Counting Mechanism -->
-        <article id="coin-counter" class="project-detail reveal">
-          <div class="detail-media">
-            <img src="assets/img/coin-counter.jpg" alt="Coin counting mechanism prototypes">
-          </div>
-          <div class="detail-content">
-            <h3>Coin Counting Mechanism</h3>
-            <p>
-              A progression of prototypes to detect and count coins for a gamified experience. Different versions explored ultrasonic detection, a load cell for weight measurement and a stepper driven system to control coin flow.
-            </p>
-            <ul class="detail-list">
-              <li>Ultrasonic sensor (HC SR04) for detecting coin presence</li>
-              <li>Load cell version to measure weight and detect insertion</li>
-              <li>Stepper based control of coin slot and locking mechanism</li>
-              <li>Serial feedback for debugging and game style instructions</li>
-            </ul>
-            <div class="detail-links">
-              <a href="#" class="btn primary-btn small">View code on GitHub</a>
-              <a href="#" class="btn ghost-btn small">Prototype overview video</a>
-            </div>
-            <div class="detail-tags">
-              <span class="tag">Sensors</span>
-              <span class="tag">Load cell</span>
-              <span class="tag">Game design</span>
-            </div>
-          </div>
-        </article>
-
-        <!-- Manège tes méninges -->
-        <article id="mtm-boardgame" class="project-detail reveal">
-          <div class="detail-media">
-            <img src="assets/img/mtm-boardgame.jpg" alt="3D printed board game components">
-          </div>
-          <div class="detail-content">
-            <h3>Manège tes méninges board game ecosystem</h3>
-            <p>
-              A complete set of 3D printed parts for an educational board game called "Manège tes méninges" used at Cégep de Jonquière. The project included design, iteration and production of multiple mechanical elements such as a ferris wheel and gear based pieces.
-            </p>
-            <ul class="detail-list">
-              <li>CAD modeling of all game components</li>
-              <li>Print tuning for durability and repeatability</li>
-              <li>Coordination with staff for quantities and deadlines</li>
-              <li>Delivery of full sets ready for classroom use</li>
-            </ul>
-            <div class="detail-links">
-              <a href="#" class="btn primary-btn small">Project description</a>
-              <a href="#" class="btn ghost-btn small">Photo gallery</a>
-            </div>
-            <div class="detail-tags">
-              <span class="tag">3D printing</span>
-              <span class="tag">Client work</span>
-              <span class="tag">Education</span>
-            </div>
-          </div>
-        </article>
-
-        <!-- Vertical Hydroponic Tower -->
-        <article id="hydroponic-tower" class="project-detail reveal">
-          <div class="detail-media">
-            <img src="assets/img/hydroponic-tower.jpg" alt="Vertical hydroponic tower project">
-          </div>
-          <div class="detail-content">
-            <h3>Vertical Hydroponic Tower and aquaponics work</h3>
-            <p>
-              A set of projects exploring how to grow plants in northern contexts using hydroponic and aquaponic systems.
-              Includes a vertical tower design, experiments with nitrifying bacteria and tools for planning and analyzing system performance.
-            </p>
-            <ul class="detail-list">
-              <li>Design and construction of a vertical hydroponic tower</li>
-              <li>Aquaponic systems cycling with fish and plants</li>
-              <li>Data tracking and analysis of water quality and growth</li>
-              <li>Presentation at science fairs and public events</li>
-            </ul>
-            <div class="detail-links">
-              <a href="#" class="btn primary-btn small">Expo science project page</a>
-              <a href="#" class="btn ghost-btn small">Presentation or poster PDF</a>
-            </div>
-            <div class="detail-tags">
-              <span class="tag">Hydroponics</span>
-              <span class="tag">Aquaponics</span>
-              <span class="tag">Research</span>
-            </div>
-          </div>
-        </article>
-
-        <!-- Robotics workshops -->
-        <article id="robotics-workshops" class="project-detail reveal">
-          <div class="detail-media">
-            <img src="assets/img/robotics-workshops.jpg" alt="Robotics workshops with kids">
-          </div>
-          <div class="detail-content">
-            <h3>Cégep robotics workshops for kids</h3>
-            <p>
-              Robotics and maker workshops designed for children, focusing on hands on discovery. The activities introduce basic electronics, sensors and simple robot behaviors in a playful environment.
-            </p>
-            <ul class="detail-list">
-              <li>Activity design tailored to different age groups</li>
-              <li>Management of group dynamics and pacing</li>
-              <li>Mix of explanation, demonstration and guided building</li>
-              <li>Encouraging creativity and experimentation</li>
-            </ul>
-            <div class="detail-links">
-              <a href="#" class="btn primary-btn small">Workshop overview</a>
-              <a href="#" class="btn ghost-btn small">Photos or recap video</a>
-            </div>
-            <div class="detail-tags">
-              <span class="tag">STEM outreach</span>
-              <span class="tag">Teaching</span>
-            </div>
-          </div>
-        </article>
-
-        <!-- Rotating microscope trophy -->
-        <article id="microscope-trophy" class="project-detail reveal">
-          <div class="detail-media">
-            <img src="assets/img/microscope-trophy.jpg" alt="Rotating microscope trophy">
-          </div>
-          <div class="detail-content">
-            <h3>Rotating microscope trophy</h3>
-            <p>
-              A trophy inspired by a microscope design, built to rotate and showcase the idea of looking closer at science.
-              Combines a symbolic shape with mechanical motion and 3D printed parts.
-            </p>
-            <ul class="detail-list">
-              <li>Concept sketching and form exploration</li>
-              <li>CAD modeling of the structure and rotation</li>
-              <li>3D printed parts and assembly plan</li>
-              <li>Focus on visual storytelling through mechanics</li>
-            </ul>
-            <div class="detail-links">
-              <a href="#" class="btn primary-btn small">Photo gallery</a>
-              <a href="#" class="btn ghost-btn small">Design notes</a>
-            </div>
-            <div class="detail-tags">
-              <span class="tag">Design</span>
-              <span class="tag">3D printing</span>
-            </div>
-          </div>
-        </article>
       </div>
     </section>
 
     <!-- Contact -->
-    <section id="contact" class="section alt-bg">
-      <div class="container">
-        <div class="section-header reveal">
-          <h2>Contact</h2>
-          <p>If you want to discuss projects, internships, collaborations or robotics workshops, feel free to reach out.</p>
-        </div>
-        <div class="contact-grid reveal">
-          <div>
-            <h3>Reach out</h3>
-            <p>Email is usually the fastest way to reach me.</p>
-            <ul class="contact-list">
-              <li><span>Email</span><a href="mailto:julien.dutil@example.com">julien.dutil@example.com</a></li>
-              <li><span>GitHub</span><a href="https://github.com/julien-dutil" target="_blank">github.com/julien-dutil</a></li>
-              <li><span>LinkedIn</span><a href="#" target="_blank">LinkedIn profile</a></li>
-            </ul>
-          </div>
-          <div>
-            <h3>Currently looking for</h3>
-            <p>
-              Internships and collaborations around robotics, automation, prototyping and creative engineering.
-              I enjoy roles that mix hands on building, problem solving and communication.
-            </p>
-          </div>
+    <section id="contact" class="section">
+      <div class="container reveal">
+        <h2>
+          <span class="lang lang-en">Contact</span>
+          <span class="lang lang-fr">Contact</span>
+        </h2>
+
+        <ul class="contact-list">
+          <li>
+            <span>Email</span>
+            <a href="mailto:julien@example.com">julien@example.com</a>
+          </li>
+
+          <li>
+            <span>LinkedIn</span>
+            <a href="https://www.linkedin.com/" target="_blank">LinkedIn</a>
+          </li>
+        </ul>
+
+        <!-- Bottom CV button -->
+        <div class="cv-bottom">
+          <a href="assets/files/JulienDutil_CV.pdf" target="_blank" class="btn primary-btn">
+            <span class="lang lang-en">View CV</span>
+            <span class="lang lang-fr">Voir mon CV</span>
+          </a>
         </div>
       </div>
     </section>
+
   </main>
 
   <footer class="site-footer">
     <div class="container footer-inner">
-      <p>© <span id="year"></span> Julien Dutil. Built with curiosity, caffeine and a lot of PLA.</p>
+      <p>© <span id="year"></span> Julien Dutil</p>
     </div>
   </footer>
 
