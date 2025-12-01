@@ -197,6 +197,10 @@ h1, h2, h3, h4 {
 }
 
 #skills.section {
+  padding-bottom: 0; /* remove lower padding so the button can float freely */
+}
+
+#skills.section {
   padding-bottom: 1.5rem; /* was 4rem — gives space to center the button */
 }
 
@@ -636,7 +640,7 @@ h1, h2, h3, h4 {
 
 /* CV bottom button */
 .cv-bottom {
-  margin: 2.8rem 0 3.2rem;
+  margin: 4rem 0; /* equal space above and below */
   text-align: center;
 }
 
