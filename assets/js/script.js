@@ -40,7 +40,6 @@ document.querySelectorAll(".featured-card").forEach(card => {
     );
     if (!targetAccordion) return;
 
-    // Open it if not already
     if (!targetAccordion.classList.contains("open")) {
       targetAccordion.classList.add("open");
     }
@@ -55,13 +54,15 @@ document.querySelectorAll(".featured-card").forEach(card => {
   });
 });
 
-// Language toggle logic - hard EN/FR switch
+// Language toggle logic
 const langToggle = document.getElementById("lang-toggle");
 const body = document.body;
 
 const savedLang = localStorage.getItem("lang") || "en";
 if (savedLang === "fr") {
   body.classList.add("lang-fr-active");
+} else {
+  body.classList.remove("lang-fr-active");
 }
 
 if (langToggle) {
@@ -82,35 +83,48 @@ if (timeline) {
   });
 }
 
-// Lightbox for project images
-const lightbox = document.getElementById("lightbox");
-const lightboxImg = document.getElementById("lightbox-img");
-
-if (lightbox && lightboxImg) {
-  document.querySelectorAll(".project-thumb").forEach(thumb => {
-    thumb.addEventListener("click", () => {
-      const fullSrc = thumb.getAttribute("data-full") || thumb.src;
-      lightboxImg.src = fullSrc;
-      lightbox.classList.add("visible");
-    });
-  });
-
-  const closeLightbox = () => {
-    lightbox.classList.remove("visible");
-    lightboxImg.src = "";
-  };
-
-  lightbox.addEventListener("click", closeLightbox);
-
-  document.addEventListener("keydown", e => {
-    if (e.key === "Escape" && lightbox.classList.contains("visible")) {
-      closeLightbox();
-    }
-  });
-}
-
 // Footer year
 const yearSpan = document.getElementById("year");
 if (yearSpan) {
   yearSpan.textContent = new Date().getFullYear();
 }
+
+// Lightbox for project images
+const lightbox = document.getElementById("lightbox");
+const lightboxImg = document.getElementById("lightbox-img");
+const lightboxBackdrop = lightbox ? lightbox.querySelector(".lightbox-backdrop") : null;
+
+function openLightbox(src, alt) {
+  if (!lightbox || !lightboxImg) return;
+  lightboxImg.src = src;
+  lightboxImg.alt = alt || "";
+  lightbox.classList.add("visible");
+}
+
+function closeLightbox() {
+  if (!lightbox || !lightboxImg) return;
+  lightbox.classList.remove("visible");
+  lightboxImg.src = "";
+}
+
+// Attach events to thumbnails
+document.querySelectorAll(".project-thumb").forEach(img => {
+  img.addEventListener("click", () => {
+    const full = img.getAttribute("data-full") || img.src;
+    const alt = img.alt || "";
+    openLightbox(full, alt);
+  });
+});
+
+if (lightboxBackdrop && lightbox) {
+  lightboxBackdrop.addEventListener("click", closeLightbox);
+  lightbox.addEventListener("click", e => {
+    if (e.target === lightbox) closeLightbox();
+  });
+}
+
+document.addEventListener("keydown", e => {
+  if (e.key === "Escape") {
+    closeLightbox();
+  }
+});
