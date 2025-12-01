@@ -704,7 +704,7 @@ body.lang-fr-active .lang-fr { display: inline; }
   color: var(--text-muted);
 }
 
-* FINAL SPACING OVERRIDES */
+/* FINAL SPACING OVERRIDES */
 #skills .skills-pill-groups {
   margin-bottom: 2rem;   /* Skills → CV */
 }
@@ -715,8 +715,9 @@ body.lang-fr-active .lang-fr { display: inline; }
 }
 
 #contact {
-  padding-top: 1rem;     /* reduce default 4rem padding */
+  padding-top: 1rem;     /* reduce default contact padding */
 }
+
 
 /* RESPONSIVE */
 @media (max-width: 880px) {
