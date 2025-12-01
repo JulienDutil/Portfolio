@@ -197,7 +197,7 @@ h1, h2, h3, h4 {
 }
 
 #skills {
-  padding: 4rem 0; 
+  padding: 2rem 0; 
 }
 
 .section.alt-bg {
@@ -601,7 +601,7 @@ h1, h2, h3, h4 {
 }
 
 #skills .skills-pill-groups {
-  margin-bottom: 2rem;   /* exact spacing above the CV button */
+  margin-bottom: 4rem;   /* exact spacing above the CV button */
 }
 
 #skills .container {
@@ -718,6 +718,13 @@ body.lang-fr-active .lang-fr { display: inline; }
   padding-top: 1rem;     /* reduce default contact padding */
 }
 
+#skills {
+  padding-bottom: 7rem !important;
+}
+
+.cv-bottom {
+  margin-top: 3rem;  /* optional */
+}
 
 /* RESPONSIVE */
 @media (max-width: 880px) {
