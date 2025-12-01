@@ -758,6 +758,11 @@ body.lang-fr-active .lang-fr { display: inline; }
   margin-bottom: 3rem;
 }
 
+#skills .cv-bottom {
+  padding-top: 5rem !important;
+  padding-bottom: 3rem !important;
+}
+
 @media (max-width: 600px) {
   .timeline-horizontal {
     gap: 2rem;
