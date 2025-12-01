@@ -193,7 +193,7 @@ h1, h2, h3, h4 {
 
 /* Sections */
 .section {
-  padding: 4rem 0;
+  padding: 2rem 0;
 }
 
 #skills {
@@ -601,7 +601,7 @@ h1, h2, h3, h4 {
 }
 
 #skills .skills-pill-groups {
-  margin-bottom: 1.5rem;   /* exact spacing above the CV button */
+  margin-bottom: 2rem;   /* exact spacing above the CV button */
 }
 
 #skills .container {
@@ -657,7 +657,7 @@ h1, h2, h3, h4 {
 /* CV bottom button */
 .cv-bottom {
   margin-top: 0;        /* let the pill-group margin control spacing */
-  margin-bottom: 1.5rem; /* exact spacing before Contact */
+  margin-bottom: 2rem; /* exact spacing before Contact */
   text-align: center;
 }
 
