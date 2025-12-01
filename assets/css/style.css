@@ -600,6 +600,10 @@ h1, h2, h3, h4 {
   justify-items: start;      /* ensure consistent alignment */
 }
 
+#skills .skills-pill-groups {
+  margin-bottom: 2.5rem;   /* exact spacing above the CV button */
+}
+
 #skills .container {
   padding-left: 1.4rem;
   padding-right: 1.4rem;
@@ -652,8 +656,8 @@ h1, h2, h3, h4 {
 
 /* CV bottom button */
 .cv-bottom {
-  margin-top: 3rem;     /* spacing A: Skills → CV button */
-  margin-bottom: 3rem;  /* spacing B: CV button → Contact */
+  margin-top: 0;        /* let the pill-group margin control spacing */
+  margin-bottom: 2.5rem; /* exact spacing before Contact */
   text-align: center;
 }
 
@@ -661,6 +665,10 @@ h1, h2, h3, h4 {
   padding: 1rem 2.2rem;
   font-size: 1.25rem;
   transform: scale(1.05);
+}
+
+#contact {
+  padding-top: 2rem;
 }
 
 /* LANGUAGE CONTROL */
