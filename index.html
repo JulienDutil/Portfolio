@@ -4,11 +4,9 @@
   <meta charset="UTF-8">
   <title>Julien Dutil - Portfolio</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="icon" href="assets/img/favicon.png">
 </head>
-
 <body>
   <!-- Header -->
   <header class="site-header">
@@ -46,11 +44,13 @@
       </nav>
 
       <div class="header-actions">
+        <!-- Language toggle -->
         <button id="lang-toggle" class="lang-toggle-btn" aria-label="Language switch">
           <img src="assets/img/lang-icon-en.png" class="lang lang-en" alt="EN">
           <img src="assets/img/lang-icon-fr.png" class="lang lang-fr" alt="FR">
         </button>
 
+        <!-- CV button -->
         <a class="btn small primary-btn" href="assets/files/JulienDutil_CV.pdf" target="_blank">
           <span class="lang lang-en">View CV</span>
           <span class="lang lang-fr">Voir mon CV</span>
@@ -60,122 +60,148 @@
   </header>
 
   <main>
-
-    <!-- Hero -->
-    <section id="hero" class="hero">
-      <div class="container hero-inner reveal">
-        <h1>
-          <span class="lang lang-en">Engineering student and maker</span>
-          <span class="lang lang-fr">Étudiant en génie et créateur</span>
-        </h1>
-      </div>
-    </section>
-
     <!-- About -->
     <section id="about" class="section">
       <div class="container reveal">
+        <div class="about-wrapper">
+          <!-- Left side text -->
+          <div class="about-text-block">
+            <h2>
+              <span class="lang lang-en">About Me</span>
+              <span class="lang lang-fr">À propos de moi</span>
+            </h2>
 
-        <h2>
-          <span class="lang lang-en">About Me</span>
-          <span class="lang lang-fr">À propos de moi</span>
-        </h2>
+            <p class="about-intro">
+              <span class="lang lang-en">
+                I am a first year mechanical engineering student who likes to design things that move. My projects mix CAD, electronics and code, with a strong focus on building real objects instead of staying on paper.
+              </span>
+              <span class="lang lang-fr">
+                Je suis un étudiant de première année en génie mécanique qui aime concevoir des objets en mouvement. Mes projets mélangent CAO, électronique et code, avec une emphase sur la construction réelle plutôt que de rester sur papier.
+              </span>
+            </p>
 
-        <p class="about-intro">
-          <span class="lang lang-en">
-            I am a first year mechanical engineering student who likes to design things that move. My projects mix CAD, electronics and code, with a strong focus on building real objects instead of staying on paper.
-          </span>
-          <span class="lang lang-fr">
-            Je suis un étudiant de première année en génie mécanique qui aime concevoir des objets en mouvement. Mes projets mélangent CAO, électronique et code, avec une emphase sur la construction réelle plutôt que de rester sur papier.
-          </span>
-        </p>
+            <h3>
+              <span class="lang lang-en">Why I Build Things</span>
+              <span class="lang lang-fr">Pourquoi je construis des choses</span>
+            </h3>
 
-        <h3 class="about-subtitle">
-          <span class="lang lang-en">Why I Build Things</span>
-          <span class="lang lang-fr">Pourquoi je construis des choses</span>
-        </h3>
-
-        <p class="about-intro">
-          <span class="lang lang-en">
-            I like when an idea on paper becomes something I can hold, test and fix. Building projects helps me understand concepts from class, but also motivates me to go further than the minimum required. Each prototype teaches me something new about how objects move, react and sometimes fail in real life.
-          </span>
-          <span class="lang lang-fr">
-            J’aime lorsqu’une idée sur papier devient quelque chose que je peux tenir, tester et améliorer. Construire des projets m’aide à comprendre les concepts vus en classe et me motive à dépasser le minimum requis. Chaque prototype m’apprend quelque chose de nouveau sur le mouvement, les réactions et parfois les défaillances des objets réels.
-          </span>
-        </p>
-
-        <!-- About Data Boxes -->
-        <div class="about-boxes">
-
-          <div class="about-box">
-            <h4>
-              <span class="lang lang-en">Profile</span>
-              <span class="lang lang-fr">Profil</span>
-            </h4>
-            <p class="about-small">
-              <span class="lang lang-en">Mechanical engineering student, builder, robotics workshop instructor</span>
-              <span class="lang lang-fr">Étudiant en génie mécanique, créateur, animateur d’ateliers de robotique</span>
+            <p>
+              <span class="lang lang-en">
+                I like when an idea on paper becomes something I can hold, test and fix. Building projects helps me understand concepts from class, but also motivates me to go further than the minimum required. Each prototype teaches me something new about how objects move, react and sometimes fail in real life.
+              </span>
+              <span class="lang lang-fr">
+                J’aime lorsqu’une idée sur papier devient quelque chose que je peux tenir, tester et améliorer. Construire des projets m’aide à comprendre les concepts vus en classe et me motive à dépasser le minimum requis. Chaque prototype m’apprend quelque chose de nouveau sur le mouvement, les réactions et parfois les défaillances des objets réels.
+              </span>
             </p>
           </div>
 
-          <div class="about-box">
-            <h4>
-              <span class="lang lang-en">Interests</span>
-              <span class="lang lang-fr">Intérêts</span>
-            </h4>
-            <p class="about-small">
-              <span class="lang lang-en">Robotics, mechatronics, prototyping, 3D printing, CAD, Arduino</span>
-              <span class="lang lang-fr">Robotique, mécatronique, prototypes, impression 3D, CAO, Arduino</span>
-            </p>
-          </div>
+          <!-- Right side cards -->
+          <div class="about-card-grid">
+            <div class="about-card">
+              <h4>
+                <span class="lang lang-en">Profile</span>
+                <span class="lang lang-fr">Profil</span>
+              </h4>
+              <p class="about-small">
+                <span class="lang lang-en">Mechanical engineering student, builder, robotics workshop instructor</span>
+                <span class="lang lang-fr">Étudiant en génie mécanique, créateur, animateur d’ateliers de robotique</span>
+              </p>
+            </div>
 
-          <div class="about-box">
-            <h4>
-              <span class="lang lang-en">Tools</span>
-              <span class="lang lang-fr">Outils</span>
-            </h4>
-            <p class="about-small">
-              <span class="lang lang-en">SolidWorks, Onshape, Fusion, Arduino IDE, basic electronics</span>
-              <span class="lang lang-fr">SolidWorks, Onshape, Fusion, Arduino IDE, électronique de base</span>
-            </p>
-          </div>
+            <div class="about-card">
+              <h4>
+                <span class="lang lang-en">Interests</span>
+                <span class="lang lang-fr">Intérêts</span>
+              </h4>
+              <p class="about-small">
+                <span class="lang lang-en">Robotics, mechatronics, prototyping, 3D printing, CAD, Arduino</span>
+                <span class="lang lang-fr">Robotique, mécatronique, prototypes, impression 3D, CAO, Arduino</span>
+              </p>
+            </div>
 
-          <div class="about-box">
-            <h4>
-              <span class="lang lang-en">Languages</span>
-              <span class="lang lang-fr">Langues</span>
-            </h4>
-            <p class="about-small">
-              <span class="lang lang-en">English, French</span>
-              <span class="lang lang-fr">Français, Anglais</span>
-            </p>
-          </div>
+            <div class="about-card">
+              <h4>
+                <span class="lang lang-en">Tools</span>
+                <span class="lang lang-fr">Outils</span>
+              </h4>
+              <p class="about-small">
+                <span class="lang lang-en">SolidWorks, Onshape, Fusion, Arduino IDE, basic electronics</span>
+                <span class="lang lang-fr">SolidWorks, Onshape, Fusion, Arduino IDE, électronique de base</span>
+              </p>
+            </div>
 
+            <div class="about-card">
+              <h4>
+                <span class="lang lang-en">Languages</span>
+                <span class="lang lang-fr">Langues</span>
+              </h4>
+              <p class="about-small">
+                <span class="lang lang-en">English, French</span>
+                <span class="lang lang-fr">Français, Anglais</span>
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- Featured Projects -->
+    <!-- Featured projects -->
     <section id="featured" class="section">
       <div class="container reveal">
         <h2>
           <span class="lang lang-en">Featured Projects</span>
           <span class="lang lang-fr">Projets en vedette</span>
         </h2>
+        <p class="section-intro">
+          <span class="lang lang-en">
+            A few projects that show how I like to build, prototype and iterate.
+          </span>
+          <span class="lang lang-fr">
+            Quelques projets qui illustrent ma façon de concevoir, prototyper et itérer.
+          </span>
+        </p>
 
         <div class="featured-grid">
+          <!-- Miniature City -->
           <div class="featured-card" data-target="miniature">
             <img src="assets/img/mini-1.png" alt="Miniature City">
-            <h3>Miniature City</h3>
+            <h3>
+              <span class="lang lang-en">Miniature City</span>
+              <span class="lang lang-fr">Ville miniature</span>
+            </h3>
+            <p class="lang lang-en">
+              A detailed miniature city with structure, lighting and motion.
+            </p>
+            <p class="lang lang-fr">
+              Une ville miniature détaillée avec structure, éclairage et mouvement.
+            </p>
           </div>
 
+          <!-- Manège tes méninges -->
           <div class="featured-card" data-target="mtm">
-            <img src="assets/img/mtm-1.png" alt="MTM">
+            <img src="assets/img/mtm-1.png" alt="Manège tes méninges">
             <h3>Manège tes méninges</h3>
+            <p class="lang lang-en">
+              A complete set of 3D printed parts for an educational board game used at the cégep.
+            </p>
+            <p class="lang lang-fr">
+              Un ensemble complet de pièces imprimées en 3D pour un jeu de société éducatif utilisé au cégep.
+            </p>
           </div>
 
+          <!-- Turret Alarm Clock -->
           <div class="featured-card" data-target="turret">
-            <img src="assets/img/turret-1.png" alt="Turret">
-            <h3>Turret Alarm Clock</h3>
+            <img src="assets/img/turret-1.png" alt="Turret Alarm Clock">
+            <h3>
+              <span class="lang lang-en">Turret Alarm Clock</span>
+              <span class="lang lang-fr">Réveil tourelle</span>
+            </h3>
+            <p class="lang lang-en">
+              A robotic alarm turret in progress that makes waking up harder to ignore.
+            </p>
+            <p class="lang lang-fr">
+              Une tourelle réveil robotique en cours de création qui rend le réveil plus difficile à ignorer.
+            </p>
           </div>
         </div>
       </div>
@@ -190,22 +216,28 @@
         </h2>
 
         <div class="upcoming-box">
-          <img src="assets/img/turret-1.png" alt="Turret upcoming">
-
+          <img src="assets/img/turret-2.png" alt="Turret alarm clock teaser">
           <div class="upcoming-text">
-            <h3>Turret Alarm Clock</h3>
-
+            <h3>
+              <span class="lang lang-en">Turret Alarm Clock</span>
+              <span class="lang lang-fr">Réveil tourelle</span>
+            </h3>
             <p class="lang lang-en">
-              A motorized alarm turret that reacts, moves and makes waking up harder to ignore.
+              My current active build. A motorized alarm turret that reacts, moves and makes waking up harder to ignore.
             </p>
             <p class="lang lang-fr">
-              Une tourelle motorisée qui réagit, se déplace et rend le réveil beaucoup plus difficile à ignorer.
+              Mon projet actif. Une tourelle motorisée qui réagit, se déplace et rend le réveil beaucoup plus difficile à ignorer.
             </p>
 
-            <a href="mailto:julien@example.com?subject=Notify%20me%20about%20the%20Turret%20Alarm%20Clock" class="notify-btn">
-              <span class="lang lang-en">Notify me when this project is ready</span>
-              <span class="lang lang-fr">Me notifier lorsque le projet est prêt</span>
-            </a>
+            <div class="upcoming-actions">
+              <a
+                class="btn secondary-btn"
+                href="mailto:julien@example.com?subject=Notify%20me%20about%20the%20Turret%20Alarm%20Clock"
+              >
+                <span class="lang lang-en">Notify me when this project is ready</span>
+                <span class="lang lang-fr">Préviens-moi quand ce projet sera prêt</span>
+              </a>
+            </div>
           </div>
         </div>
       </div>
@@ -218,8 +250,331 @@
           <span class="lang lang-en">All Projects</span>
           <span class="lang lang-fr">Tous les projets</span>
         </h2>
+        <p class="section-intro">
+          <span class="lang lang-en">
+            Ordered from newest to oldest. Click a project to see details, photos and videos.
+          </span>
+          <span class="lang lang-fr">
+            Classés du plus récent au plus ancien. Cliquez sur un projet pour voir les détails, les photos et les vidéos.
+          </span>
+        </p>
 
-        <div id="project-accordion-container"></div>
+        <div id="project-accordion-container">
+          <!-- Turret Alarm Clock (In progress) -->
+          <article class="project-accordion" data-project-id="turret">
+            <header class="accordion-header">
+              <div>
+                <h3>
+                  <span class="lang lang-en">Turret Alarm Clock</span>
+                  <span class="lang lang-fr">Réveil tourelle</span>
+                </h3>
+                <span class="tag tag-status">
+                  <span class="lang lang-en">In progress</span>
+                  <span class="lang lang-fr">En cours</span>
+                </span>
+              </div>
+              <span class="year">2025</span>
+            </header>
+            <div class="accordion-body">
+              <div class="project-main">
+                <div class="project-main-media">
+                  <img src="assets/img/turret-1.png" alt="Turret alarm clock prototype" class="project-main-img">
+                </div>
+                <div class="project-main-content">
+                  <p class="lang lang-en">
+                    A robotic alarm clock that behaves like a small turret. It rotates, moves and reacts when the alarm
+                    triggers, making snoozing more difficult.
+                  </p>
+                  <p class="lang lang-fr">
+                    Un réveil robotique qui se comporte comme une petite tourelle. Il tourne, se déplace et réagit lorsque
+                    l'alarme se déclenche, ce qui rend le snooze beaucoup plus difficile.
+                  </p>
+                  <ul class="project-points">
+                    <li class="lang lang-en">Stepper motors and a servo for expressive motion.</li>
+                    <li class="lang lang-fr">Moteurs pas à pas et servo pour des mouvements expressifs.</li>
+                    <li class="lang lang-en">Custom motion sequences and sound effects.</li>
+                    <li class="lang lang-fr">Séquences de mouvements personnalisées et effets sonores.</li>
+                    <li class="lang lang-en">Designed to be playful and slightly annoying on purpose.</li>
+                    <li class="lang lang-fr">Conçu pour être ludique et volontairement un peu agaçant.</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="project-gallery">
+                <img src="assets/img/turret-1.png" alt="Turret alarm main view" class="project-thumb" data-full="assets/img/turret-1.png">
+                <img src="assets/img/turret-2.png" alt="Turret alarm side view" class="project-thumb" data-full="assets/img/turret-2.png">
+                <img src="assets/img/turret-3.png" alt="Turret alarm detail" class="project-thumb" data-full="assets/img/turret-3.png">
+                <img src="assets/img/turret-motion.png" alt="Turret alarm motion" class="project-thumb" data-full="assets/img/turret-motion.png">
+                <img src="assets/img/turret-tech.png" alt="Turret alarm CAD" class="project-thumb" data-full="assets/img/turret-tech.png">
+              </div>
+            </div>
+          </article>
+
+          <!-- Mechanical Coin Counter (Nov 2025) -->
+          <article class="project-accordion" data-project-id="coin-counter">
+            <header class="accordion-header">
+              <div>
+                <h3>
+                  <span class="lang lang-en">Mechanical Coin Counter</span>
+                  <span class="lang lang-fr">Compteur de pièces mécanique</span>
+                </h3>
+              </div>
+              <span class="year">2025</span>
+            </header>
+            <div class="accordion-body">
+              <div class="project-main">
+                <div class="project-main-media">
+                  <img src="assets/img/coin-1.png" alt="Mechanical coin counter" class="project-main-img">
+                </div>
+                <div class="project-main-content">
+                  <p class="lang lang-en">
+                    A series of prototypes for detecting and counting coins using sensors and mechanical systems.
+                    Built for a gamified experience where each coin unlocks a step.
+                  </p>
+                  <p class="lang lang-fr">
+                    Une série de prototypes pour détecter et compter des pièces grâce à des capteurs et des mécanismes.
+                    Conçu pour une expérience ludique où chaque pièce débloque une étape.
+                  </p>
+                  <ul class="project-points">
+                    <li class="lang lang-en">Experiments with ultrasonic sensing, load cells and limit switches.</li>
+                    <li class="lang lang-fr">Expérimentations avec capteur ultrasonique, cellule de charge et interrupteurs de fin de course.</li>
+                    <li class="lang lang-en">Servo and stepper driven parts to control coin flow.</li>
+                    <li class="lang lang-fr">Pièces actionnées par servo et moteur pas à pas pour contrôler le flux de pièces.</li>
+                    <li class="lang lang-en">Serial feedback used as part of a storyline and game logic.</li>
+                    <li class="lang lang-fr">Retour série utilisé comme partie d’une narration et de la logique du jeu.</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="project-gallery">
+                <img src="assets/img/coin-1.png" alt="Coin counter front view" class="project-thumb" data-full="assets/img/coin-1.png">
+                <img src="assets/img/coin-2.png" alt="Coin counter mechanism" class="project-thumb" data-full="assets/img/coin-2.png">
+                <img src="assets/img/coin-3.png" alt="Coin counter prototype" class="project-thumb" data-full="assets/img/coin-3.png">
+                <img src="assets/img/coin-motion.png" alt="Coin counter motion" class="project-thumb" data-full="assets/img/coin-motion.png">
+                <img src="assets/img/coin-tech.png" alt="Coin counter technical view" class="project-thumb" data-full="assets/img/coin-tech.png">
+              </div>
+            </div>
+          </article>
+
+          <!-- Manège tes méninges (Oct 2025) -->
+          <article class="project-accordion" data-project-id="mtm">
+            <header class="accordion-header">
+              <div>
+                <h3>Manège tes méninges</h3>
+              </div>
+              <span class="year">2025</span>
+            </header>
+            <div class="accordion-body">
+              <div class="project-main">
+                <div class="project-main-media">
+                  <img src="assets/img/mtm-1.png" alt="Manège tes méninges pieces" class="project-main-img">
+                </div>
+                <div class="project-main-content">
+                  <p class="lang lang-en">
+                    A contract project for the cégep: design, print and deliver all 3D components for the board game
+                    "Manège tes méninges".
+                  </p>
+                  <p class="lang lang-fr">
+                    Un projet sous contrat pour le cégep: concevoir, imprimer et livrer tous les composants 3D du jeu
+                    de société "Manège tes méninges".
+                  </p>
+                  <ul class="project-points">
+                    <li class="lang lang-en">CAD modeling of ferris wheel, gears and multiple game pieces.</li>
+                    <li class="lang lang-fr">Modélisation CAO de la grande roue, des engrenages et de plusieurs pièces de jeu.</li>
+                    <li class="lang lang-en">Tuning print settings for durability and repeatability.</li>
+                    <li class="lang lang-fr">Ajustement des paramètres d’impression pour la durabilité et la répétabilité.</li>
+                    <li class="lang lang-en">Coordination with staff for quantities, timelines and delivery.</li>
+                    <li class="lang lang-fr">Coordination avec le personnel pour les quantités, les délais et la livraison.</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="project-gallery">
+                <img src="assets/img/mtm-1.png" alt="MTM overview" class="project-thumb" data-full="assets/img/mtm-1.png">
+                <img src="assets/img/mtm-2.png" alt="MTM parts" class="project-thumb" data-full="assets/img/mtm-2.png">
+                <img src="assets/img/mtm-3.png" alt="MTM ferris wheel" class="project-thumb" data-full="assets/img/mtm-3.png">
+                <img src="assets/img/mtm-motion.png" alt="MTM motion" class="project-thumb" data-full="assets/img/mtm-motion.png">
+                <img src="assets/img/mtm-tech.png" alt="MTM technical" class="project-thumb" data-full="assets/img/mtm-tech.png">
+              </div>
+            </div>
+          </article>
+
+          <!-- Effort Economy Card Game (Jul 2025) -->
+          <article class="project-accordion" data-project-id="effort-economy">
+            <header class="accordion-header">
+              <div>
+                <h3>The Effort Economy - Card Game</h3>
+              </div>
+              <span class="year">2025</span>
+            </header>
+            <div class="accordion-body">
+              <div class="project-main">
+                <div class="project-main-media">
+                  <img src="assets/img/effort-1.png" alt="Effort Economy card game" class="project-main-img">
+                </div>
+                <div class="project-main-content">
+                  <p class="lang lang-en">
+                    A card game that turns habits, effort and daily tasks into a small personal economy.
+                    Designed to make productivity feel playful and visible.
+                  </p>
+                  <p class="lang lang-fr">
+                    Un jeu de cartes qui transforme les habitudes, l’effort et les tâches quotidiennes en une petite
+                    économie personnelle. Conçu pour rendre la productivité plus ludique et visible.
+                  </p>
+                  <ul class="project-points">
+                    <li class="lang lang-en">Custom card design and category system for habits and rewards.</li>
+                    <li class="lang lang-fr">Conception de cartes personnalisées et système de catégories pour les habitudes et les récompenses.</li>
+                    <li class="lang lang-en">Balancing mechanics to keep the game motivating over time.</li>
+                    <li class="lang lang-fr">Équilibrage des mécaniques pour garder le jeu motivant à long terme.</li>
+                    <li class="lang lang-en">Can be used physically and tracked with simple tools.</li>
+                    <li class="lang lang-fr">Peut être utilisé physiquement et suivi avec des outils simples.</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="project-gallery">
+                <img src="assets/img/effort-1.png" alt="Effort cards spread" class="project-thumb" data-full="assets/img/effort-1.png">
+                <img src="assets/img/effort-2.png" alt="Effort close up" class="project-thumb" data-full="assets/img/effort-2.png">
+                <img src="assets/img/effort-3.png" alt="Effort board" class="project-thumb" data-full="assets/img/effort-3.png">
+                <img src="assets/img/effort-motion.png" alt="Effort motion" class="project-thumb" data-full="assets/img/effort-motion.png">
+                <img src="assets/img/effort-tech.png" alt="Effort technical" class="project-thumb" data-full="assets/img/effort-tech.png">
+              </div>
+            </div>
+          </article>
+
+          <!-- Miniature City (Nov 2024) -->
+          <article class="project-accordion" data-project-id="miniature">
+            <header class="accordion-header">
+              <div>
+                <h3>
+                  <span class="lang lang-en">Miniature City</span>
+                  <span class="lang lang-fr">Ville miniature</span>
+                </h3>
+              </div>
+              <span class="year">2024</span>
+            </header>
+            <div class="accordion-body">
+              <div class="project-main">
+                <div class="project-main-media">
+                  <img src="assets/img/mini-1.png" alt="Miniature city model" class="project-main-img">
+                </div>
+                <div class="project-main-content">
+                  <p class="lang lang-en">
+                    A small city built at miniature scale, combining structure, lighting and motion.
+                    A sandbox for testing mechanical ideas on a tiny stage.
+                  </p>
+                  <p class="lang lang-fr">
+                    Une petite ville construite à l’échelle miniature qui combine structure, éclairage et mouvement.
+                    Un terrain de jeu pour tester des idées mécaniques à petite échelle.
+                  </p>
+                  <ul class="project-points">
+                    <li class="lang lang-en">Mix of static buildings and moving elements.</li>
+                    <li class="lang lang-fr">Mélange de bâtiments statiques et d’éléments en mouvement.</li>
+                    <li class="lang lang-en">Emphasis on visual storytelling through layout.</li>
+                    <li class="lang lang-fr">Accent mis sur la narration visuelle à travers la disposition.</li>
+                    <li class="lang lang-en">Good testing ground for future city builds.</li>
+                    <li class="lang lang-fr">Bon terrain d’essai pour de futurs projets de ville.</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="project-gallery">
+                <img src="assets/img/mini-1.png" alt="Miniature city overview" class="project-thumb" data-full="assets/img/mini-1.png">
+                <img src="assets/img/mini-2.png" alt="Miniature city detail" class="project-thumb" data-full="assets/img/mini-2.png">
+                <img src="assets/img/mini-3.png" alt="Miniature city street" class="project-thumb" data-full="assets/img/mini-3.png">
+                <img src="assets/img/mini-motion.png" alt="Miniature motion" class="project-thumb" data-full="assets/img/mini-motion.png">
+                <img src="assets/img/mini-tech.png" alt="Miniature technical" class="project-thumb" data-full="assets/img/mini-tech.png">
+              </div>
+              <div class="project-extra-media">
+                <div class="video-wrapper">
+                  <!-- Replace YOUTUBE_ID_MINI with your real video id -->
+                  <iframe src="https://www.youtube.com/embed/YOUTUBE_ID_MINI" title="Miniature City" allowfullscreen></iframe>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Robotic Microscope Trophy (Sep 2024) -->
+          <article class="project-accordion" data-project-id="microscope">
+            <header class="accordion-header">
+              <div>
+                <h3>
+                  <span class="lang lang-en">Robotic Microscope Trophy</span>
+                  <span class="lang lang-fr">Trophée microscope robotique</span>
+                </h3>
+              </div>
+              <span class="year">2024</span>
+            </header>
+            <div class="accordion-body">
+              <div class="project-main">
+                <div class="project-main-media">
+                  <img src="assets/img/micro-1.png" alt="Robotic microscope trophy" class="project-main-img">
+                </div>
+                <div class="project-main-content">
+                  <p class="lang lang-en">
+                    A rotating trophy inspired by a microscope shape. Designed to celebrate science and curiosity with a mechanical gesture.
+                  </p>
+                  <p class="lang lang-fr">
+                    Un trophée rotatif inspiré de la forme d’un microscope. Conçu pour célébrer la science et la curiosité avec un geste mécanique.
+                  </p>
+                  <ul class="project-points">
+                    <li class="lang lang-en">CAD design of the structure and rotating base.</li>
+                    <li class="lang lang-fr">Conception CAO de la structure et de la base rotative.</li>
+                    <li class="lang lang-en">3D printed parts tuned for clean assembly.</li>
+                    <li class="lang lang-fr">Pièces imprimées en 3D optimisées pour un assemblage propre.</li>
+                    <li class="lang lang-en">Looped motion to highlight the rotation.</li>
+                    <li class="lang lang-fr">Mouvement en boucle pour mettre en valeur la rotation.</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="project-gallery">
+                <img src="assets/img/micro-1.png" alt="Microscope trophy overview" class="project-thumb" data-full="assets/img/micro-1.png">
+                <img src="assets/img/micro-2.png" alt="Microscope trophy detail" class="project-thumb" data-full="assets/img/micro-2.png">
+                <img src="assets/img/micro-3.png" alt="Microscope trophy base" class="project-thumb" data-full="assets/img/micro-3.png">
+                <img src="assets/img/micro-motion.png" alt="Microscope motion" class="project-thumb" data-full="assets/img/micro-motion.png">
+                <img src="assets/img/micro-tech.png" alt="Microscope technical" class="project-thumb" data-full="assets/img/micro-tech.png">
+              </div>
+            </div>
+          </article>
+
+          <!-- Turntable (Mar 2024) -->
+          <article class="project-accordion" data-project-id="turntable">
+            <header class="accordion-header">
+              <div>
+                <h3>
+                  <span class="lang lang-en">Turntable</span>
+                  <span class="lang lang-fr">Plateau tournant</span>
+                </h3>
+              </div>
+              <span class="year">2024</span>
+            </header>
+            <div class="accordion-body">
+              <div class="project-main">
+                <div class="project-main-media">
+                  <img src="assets/img/turn-1.png" alt="Turntable project" class="project-main-img">
+                </div>
+                <div class="project-main-content">
+                  <p class="lang lang-en">
+                    A motorized turntable for displaying objects. Simple in appearance, but useful for testing rotation,
+                    bearings and speed control.
+                  </p>
+                  <p class="lang lang-fr">
+                    Un plateau tournant motorisé pour présenter des objets. Simple en apparence, mais utile pour tester
+                    la rotation, les roulements et le contrôle de la vitesse.
+                  </p>
+                  <ul class="project-points">
+                    <li class="lang lang-en">Design focused on smooth and stable motion.</li>
+                    <li class="lang lang-fr">Conception axée sur un mouvement fluide et stable.</li>
+                    <li class="lang lang-en">Reusable as a base for other builds.</li>
+                    <li class="lang lang-fr">Réutilisable comme base pour d’autres projets.</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="project-gallery">
+                <img src="assets/img/turn-1.png" alt="Turntable overview" class="project-thumb" data-full="assets/img/turn-1.png">
+                <img src="assets/img/turn-2.png" alt="Turntable detail" class="project-thumb" data-full="assets/img/turn-2.png">
+                <img src="assets/img/turn-3.png" alt="Turntable mechanism" class="project-thumb" data-full="assets/img/turn-3.png">
+                <img src="assets/img/turn-motion.png" alt="Turntable motion" class="project-thumb" data-full="assets/img/turn-motion.png">
+                <img src="assets/img/turn-tech.png" alt="Turntable technical" class="project-thumb" data-full="assets/img/turn-tech.png">
+              </div>
+            </div>
+          </article>
+        </div>
       </div>
     </section>
 
@@ -230,57 +585,77 @@
           <span class="lang lang-en">Project Timeline</span>
           <span class="lang lang-fr">Chronologie des projets</span>
         </h2>
+        <p class="section-intro">
+          <span class="lang lang-en">
+            From early mechanisms to more complex builds. Scroll sideways to explore.
+          </span>
+          <span class="lang lang-fr">
+            Des premiers mécanismes aux projets plus complexes. Faites défiler horizontalement pour explorer.
+          </span>
+        </p>
 
-        <div class="timeline-wrapper">
+        <div class="timeline-horizontal">
+          <!-- Glowing line behind dots only -->
           <div class="timeline-line"></div>
 
-          <div class="timeline-horizontal">
+          <div class="time-block">
+            <p class="time-title">
+              <span class="lang lang-en">Turntable</span>
+              <span class="lang lang-fr">Plateau tournant</span>
+            </p>
+            <div class="time-dot"></div>
+            <span class="time-date">Mar 2024</span>
+          </div>
 
-            <div class="time-block">
-              <div class="time-title">Turntable</div>
-              <div class="dot"></div>
-              <div class="date">Mar 2024</div>
-            </div>
+          <div class="time-block">
+            <p class="time-title">
+              <span class="lang lang-en">Microscope Trophy</span>
+              <span class="lang lang-fr">Trophée microscope</span>
+            </p>
+            <div class="time-dot"></div>
+            <span class="time-date">Sep 2024</span>
+          </div>
 
-            <div class="time-block">
-              <div class="time-title">Microscope Trophy</div>
-              <div class="dot"></div>
-              <div class="date">Sep 2024</div>
-            </div>
+          <div class="time-block">
+            <p class="time-title">
+              <span class="lang lang-en">Miniature City</span>
+              <span class="lang lang-fr">Ville miniature</span>
+            </p>
+            <div class="time-dot"></div>
+            <span class="time-date">Nov 2024</span>
+          </div>
 
-            <div class="time-block">
-              <div class="time-title">Miniature City</div>
-              <div class="dot"></div>
-              <div class="date">Nov 2024</div>
-            </div>
+          <div class="time-block">
+            <p class="time-title">Effort Economy</p>
+            <div class="time-dot"></div>
+            <span class="time-date">Jul 2025</span>
+          </div>
 
-            <div class="time-block">
-              <div class="time-title">Effort Economy</div>
-              <div class="dot"></div>
-              <div class="date">Jul 2025</div>
-            </div>
+          <div class="time-block">
+            <p class="time-title">Manège tes méninges</p>
+            <div class="time-dot"></div>
+            <span class="time-date">Oct 2025</span>
+          </div>
 
-            <div class="time-block">
-              <div class="time-title">Manège tes méninges</div>
-              <div class="dot"></div>
-              <div class="date">Oct 2025</div>
-            </div>
+          <div class="time-block">
+            <p class="time-title">
+              <span class="lang lang-en">Coin Counter</span>
+              <span class="lang lang-fr">Compteur de pièces</span>
+            </p>
+            <div class="time-dot"></div>
+            <span class="time-date">Nov 2025</span>
+          </div>
 
-            <div class="time-block">
-              <div class="time-title">Coin Counter</div>
-              <div class="dot"></div>
-              <div class="date">Nov 2025</div>
-            </div>
-
-            <div class="time-block">
-              <div class="time-title">Turret Alarm Clock</div>
-              <div class="dot"></div>
-              <div class="date">
-                <span class="lang lang-en">In progress</span>
-                <span class="lang lang-fr">En cours</span>
-              </div>
-            </div>
-
+          <div class="time-block">
+            <p class="time-title">
+              <span class="lang lang-en">Turret Alarm Clock</span>
+              <span class="lang lang-fr">Réveil tourelle</span>
+            </p>
+            <div class="time-dot"></div>
+            <span class="time-date">
+              <span class="lang lang-en">In progress</span>
+              <span class="lang lang-fr">En cours</span>
+            </span>
           </div>
         </div>
       </div>
@@ -289,21 +664,103 @@
     <!-- Skills -->
     <section id="skills" class="section">
       <div class="container reveal">
-
         <h2>
-          <span class="lang lang-en">Skills & Technologies</span>
+          <span class="lang lang-en">Skills &amp; Technologies</span>
           <span class="lang lang-fr">Compétences et technologies</span>
         </h2>
+        <p class="section-intro">
+          <span class="lang lang-en">
+            I like projects that combine mechanical design, electronics and code. Here are some of the tools I use most often.
+          </span>
+          <span class="lang lang-fr">
+            J’aime les projets qui combinent conception mécanique, électronique et code. Voici quelques outils que j’utilise souvent.
+          </span>
+        </p>
 
-        <div class="skills-grid">
-          <span class="skill-pill">CAD</span>
-          <span class="skill-pill">Arduino</span>
-          <span class="skill-pill">3D Printing</span>
-          <span class="skill-pill">Prototyping</span>
-          <span class="skill-pill">Electronics</span>
-          <span class="skill-pill">C++ Basics</span>
-          <span class="skill-pill">Robotics</span>
-          <span class="skill-pill">Mechatronics</span>
+        <div class="skills-pill-groups">
+          <div class="skills-pill-group">
+            <h3>
+              <span class="lang lang-en">Mechanical</span>
+              <span class="lang lang-fr">Mécanique</span>
+            </h3>
+            <div class="skills-pill-list">
+              <span class="skill-pill">
+                <span class="lang lang-en">CAD modeling (SolidWorks)</span>
+                <span class="lang lang-fr">Modélisation CAO (SolidWorks)</span>
+              </span>
+              <span class="skill-pill">
+                <span class="lang lang-en">Mechanisms and motion systems</span>
+                <span class="lang lang-fr">Mécanismes et systèmes de mouvement</span>
+              </span>
+              <span class="skill-pill">
+                <span class="lang lang-en">Design for 3D printing</span>
+                <span class="lang lang-fr">Conception pour l’impression 3D</span>
+              </span>
+            </div>
+          </div>
+
+          <div class="skills-pill-group">
+            <h3>
+              <span class="lang lang-en">Electronics</span>
+              <span class="lang lang-fr">Électronique</span>
+            </h3>
+            <div class="skills-pill-list">
+              <span class="skill-pill">
+                <span class="lang lang-en">Arduino projects</span>
+                <span class="lang lang-fr">Projets avec Arduino</span>
+              </span>
+              <span class="skill-pill">
+                <span class="lang lang-en">Servos and stepper motors</span>
+                <span class="lang lang-fr">Servomoteurs et moteurs pas à pas</span>
+              </span>
+              <span class="skill-pill">
+                <span class="lang lang-en">Sensors (HC SR04, load cells, limit switches)</span>
+                <span class="lang lang-fr">Capteurs (HC SR04, cellules de charge, fins de course)</span>
+              </span>
+            </div>
+          </div>
+
+          <div class="skills-pill-group">
+            <h3>
+              <span class="lang lang-en">Software</span>
+              <span class="lang lang-fr">Logiciels</span>
+            </h3>
+            <div class="skills-pill-list">
+              <span class="skill-pill">
+                <span class="lang lang-en">C++ basics</span>
+                <span class="lang lang-fr">Bases en C++</span>
+              </span>
+              <span class="skill-pill">
+                <span class="lang lang-en">Xcode, VS Code</span>
+                <span class="lang lang-fr">Xcode, VS Code</span>
+              </span>
+              <span class="skill-pill">
+                <span class="lang lang-en">GitHub and version control</span>
+                <span class="lang lang-fr">GitHub et contrôle de version</span>
+              </span>
+            </div>
+          </div>
+
+          <div class="skills-pill-group">
+            <h3>
+              <span class="lang lang-en">Maker tools</span>
+              <span class="lang lang-fr">Outils de fabrication</span>
+            </h3>
+            <div class="skills-pill-list">
+              <span class="skill-pill">
+                <span class="lang lang-en">FDM 3D printing</span>
+                <span class="lang lang-fr">Impression 3D FDM</span>
+              </span>
+              <span class="skill-pill">
+                <span class="lang lang-en">Basic hand tools and assembly</span>
+                <span class="lang lang-fr">Outils manuels et assemblage</span>
+              </span>
+              <span class="skill-pill">
+                <span class="lang lang-en">Rapid prototyping</span>
+                <span class="lang lang-fr">Prototypage rapide</span>
+              </span>
+            </div>
+          </div>
         </div>
 
         <div class="cv-bottom">
@@ -312,7 +769,6 @@
             <span class="lang lang-fr">Voir mon CV</span>
           </a>
         </div>
-
       </div>
     </section>
 
@@ -323,6 +779,14 @@
           <span class="lang lang-en">Contact</span>
           <span class="lang lang-fr">Contact</span>
         </h2>
+        <p class="section-intro">
+          <span class="lang lang-en">
+            For internships, collaborations or robotics workshops, feel free to get in touch.
+          </span>
+          <span class="lang lang-fr">
+            Pour des stages, des collaborations ou des ateliers de robotique, n’hésitez pas à me contacter.
+          </span>
+        </p>
 
         <ul class="contact-list">
           <li>
@@ -330,20 +794,35 @@
             <a href="mailto:julien@example.com">julien@example.com</a>
           </li>
           <li>
-            <span>LinkedIn</span>
-            <a href="https://www.linkedin.com/" target="_blank">LinkedIn</a>
+            <span>GitHub</span>
+            <a href="https://github.com/JulienDutil" target="_blank" rel="noopener noreferrer">github.com/JulienDutil</a>
+          </li>
+          <li>
+            <span>Region</span>
+            <span>Saguenay - Lac Saint Jean, QC</span>
           </li>
         </ul>
       </div>
     </section>
-
   </main>
 
+  <!-- Footer -->
   <footer class="site-footer">
     <div class="container footer-inner">
-      <p>© <span id="year"></span> Julien Dutil</p>
+      <p>
+        <span class="lang lang-en">© <span id="year"></span> Julien Dutil. All rights reserved.</span>
+        <span class="lang lang-fr">© <span id="year"></span> Julien Dutil. Tous droits réservés.</span>
+      </p>
     </div>
   </footer>
+
+  <!-- Lightbox for gallery images -->
+  <div id="lightbox" class="lightbox">
+    <div class="lightbox-backdrop"></div>
+    <div class="lightbox-content">
+      <img src="" alt="" id="lightbox-img">
+    </div>
+  </div>
 
   <script src="assets/js/script.js"></script>
 </body>
