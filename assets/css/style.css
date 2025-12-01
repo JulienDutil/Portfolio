@@ -476,9 +476,13 @@ h3 {
   margin-top: 2.2rem;
   display: flex;
   gap: 3rem;
+  padding-bottom: 1rem;
+  overflow-x: auto;
   padding: 2.5rem 0 1.5rem;
   position: relative;
-  overflow-x: auto;
+
+  width: max-content;     /* Add this */
+  min-width: 100%;        /* And this */
 }
 
 /* Nice horizontal scrollbar */
@@ -500,19 +504,24 @@ h3 {
 .timeline-line {
   position: absolute;
   top: 50%;
+  transform: translateY(-50%);
   left: 0;
   height: 3px;
   width: 100%;
+  min-width: 100%;
+  pointer-events: none;
+
   background: linear-gradient(
     to right,
     #7e5aff,
     #a884ff,
     #c8b2ff
   );
-  z-index: 0;
+
   opacity: 0.55;
-  pointer-events: none;
+  z-index: 0;
 }
+
 
 .time-block {
   position: relative;
