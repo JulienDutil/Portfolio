@@ -213,6 +213,23 @@ h3 {
   color: var(--text-muted);
 }
 
+/* Hero title layout */
+.hero {
+  padding: 4rem 0 3rem;
+  text-align: center;
+}
+
+.hero-inner {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.hero-title {
+  font-size: clamp(2.6rem, 5vw, 3.4rem);
+  margin: 0;
+  color: var(--text-main);
+}
+
 /* ABOUT */
 .about-wrapper {
   display: grid;
@@ -226,6 +243,12 @@ h3 {
   font-size: 1.15rem;
   line-height: 1.6;
   color: var(--text-muted);
+}
+
+/* About text color tweak */
+.about-text-block,
+.about-text-block p {
+  color: var(--text-main);
 }
 
 .about-text-block h3 {
