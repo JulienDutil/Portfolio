@@ -596,6 +596,22 @@ h1, h2, h3, h4 {
   grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
 }
 
+.skills-pill-groups {
+  justify-items: start;      /* ensure consistent alignment */
+}
+
+#skills .container {
+  padding-left: 1.4rem;
+  padding-right: 1.4rem;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1040px;         /* force same width as all other sections */
+}
+
+#skills {
+  text-align: left;          /* prevents centering behavior */
+}
+
 /* Soft glow pills (Option 1) */
 .skills-pill-group {
   display: flex;
