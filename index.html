@@ -23,6 +23,10 @@
           <span class="lang lang-en">About</span>
           <span class="lang lang-fr">À propos</span>
         </a>
+        <a href="#featured">
+          <span class="lang lang-en">Featured</span>
+          <span class="lang lang-fr">En vedette</span>
+        </a>
         <a href="#projects">
           <span class="lang lang-en">Projects</span>
           <span class="lang lang-fr">Projets</span>
@@ -79,7 +83,7 @@
               <span class="lang lang-fr">À propos de moi</span>
             </h2>
 
-            <p class="about-lead">
+            <p class="about-text">
               <span class="lang lang-en">
                 I am a first year mechanical engineering student who likes to design things that move. My projects mix CAD,
                 electronics and code, with a strong focus on building real objects instead of staying on paper.
@@ -112,60 +116,48 @@
           </div>
 
           <div class="about-panels">
-            <div class="about-item subtle-card">
-              <div class="about-icon"></div>
-              <div class="about-item-body">
-                <h3>
-                  <span class="lang lang-en">Profile</span>
-                  <span class="lang lang-fr">Profil</span>
-                </h3>
-                <p>
-                  <span class="lang lang-en">First year mechanical engineering student.</span>
-                  <span class="lang lang-fr">Étudiant de première année en génie mécanique.</span>
-                </p>
-              </div>
+            <div class="about-item">
+              <h3>
+                <span class="lang lang-en">Profile</span>
+                <span class="lang lang-fr">Profil</span>
+              </h3>
+              <p>
+                <span class="lang lang-en">First year mechanical engineering student.</span>
+                <span class="lang lang-fr">Étudiant de première année en génie mécanique.</span>
+              </p>
             </div>
 
-            <div class="about-item subtle-card">
-              <div class="about-icon"></div>
-              <div class="about-item-body">
-                <h3>
-                  <span class="lang lang-en">Interests</span>
-                  <span class="lang lang-fr">Intérêts</span>
-                </h3>
-                <p>
-                  <span class="lang lang-en">Robotics, mechatronics, modeling and 3D printing.</span>
-                  <span class="lang lang-fr">Robotique, mécatronique, modélisation et impression 3D.</span>
-                </p>
-              </div>
+            <div class="about-item">
+              <h3>
+                <span class="lang lang-en">Interests</span>
+                <span class="lang lang-fr">Intérêts</span>
+              </h3>
+              <p>
+                <span class="lang lang-en">Robotics, mechatronics, modeling and 3D printing.</span>
+                <span class="lang lang-fr">Robotique, mécatronique, modélisation et impression 3D.</span>
+              </p>
             </div>
 
-            <div class="about-item subtle-card">
-              <div class="about-icon"></div>
-              <div class="about-item-body">
-                <h3>
-                  <span class="lang lang-en">Tools</span>
-                  <span class="lang lang-fr">Outils</span>
-                </h3>
-                <p>
-                  <span class="lang lang-en">SolidWorks, basic C++ and various maker tools.</span>
-                  <span class="lang lang-fr">SolidWorks, notions de C++ et plusieurs outils de fabrication.</span>
-                </p>
-              </div>
+            <div class="about-item">
+              <h3>
+                <span class="lang lang-en">Tools</span>
+                <span class="lang lang-fr">Outils</span>
+              </h3>
+              <p>
+                <span class="lang lang-en">SolidWorks, basic C++, GitHub and maker tools.</span>
+                <span class="lang lang-fr">SolidWorks, notions de C++, GitHub et outils de fabrication.</span>
+              </p>
             </div>
 
-            <div class="about-item subtle-card">
-              <div class="about-icon"></div>
-              <div class="about-item-body">
-                <h3>
-                  <span class="lang lang-en">Languages</span>
-                  <span class="lang lang-fr">Langues</span>
-                </h3>
-                <p>
-                  <span class="lang lang-en">Perfectly bilingual in English and French.</span>
-                  <span class="lang lang-fr">Parfaitement bilingue en français et en anglais.</span>
-                </p>
-              </div>
+            <div class="about-item">
+              <h3>
+                <span class="lang lang-en">Languages</span>
+                <span class="lang lang-fr">Langues</span>
+              </h3>
+              <p>
+                <span class="lang lang-en">Perfectly bilingual in English and French.</span>
+                <span class="lang lang-fr">Parfaitement bilingue en français et en anglais.</span>
+              </p>
             </div>
           </div>
         </div>
@@ -173,7 +165,7 @@
     </section>
 
     <!-- Featured Projects -->
-    <section id="featured" class="section">
+    <section id="featured" class="section alt-bg">
       <div class="container reveal">
         <h2>
           <span class="lang lang-en">Featured Projects</span>
@@ -260,11 +252,11 @@
             </p>
 
             <a
-              class="btn notify-btn"
-              href="mailto:julien@example.com?subject=Notify%20me%20about%20the%20Turret%20Alarm%20Clock&body=Hi%20Julien,%0D%0A%0D%0AI%20would%20like%20to%20be%20notified%20when%20the%20Turret%20Alarm%20Clock%20project%20comes%20out.%0D%0A%0D%0AName:%0D%0AEmail:%0D%0A"
+              href="mailto:julien@example.com?subject=Turret%20Alarm%20Clock%20-%20Notification&body=Hi%20Julien%2C%0A%0AI%20would%20like%20to%20be%20notified%20when%20the%20Turret%20Alarm%20Clock%20project%20comes%20out.%0A%0AName%3A%0AEmail%3A%0A"
+              class="btn secondary-btn"
             >
-              <span class="lang lang-en">Notify me when this project comes out</span>
-              <span class="lang lang-fr">Me prévenir quand ce projet sortira</span>
+              <span class="lang lang-en">Notify me when this project is ready</span>
+              <span class="lang lang-fr">Me notifier quand ce projet sera prêt</span>
             </a>
           </div>
         </div>
@@ -272,7 +264,7 @@
     </section>
 
     <!-- All Projects Accordion -->
-    <section id="projects" class="section">
+    <section id="projects" class="section alt-bg">
       <div class="container reveal">
         <h2>
           <span class="lang lang-en">All Projects</span>
@@ -662,7 +654,6 @@
         </p>
 
         <div class="timeline-horizontal">
-
           <div class="time-block">
             <span class="date">Mar 2024</span>
             <div class="dot"></div>
@@ -722,13 +713,12 @@
               <span class="lang lang-fr">Réveil tourelle</span>
             </p>
           </div>
-
         </div>
       </div>
     </section>
 
     <!-- Skills & Technologies -->
-    <section id="skills" class="section">
+    <section id="skills" class="section alt-bg">
       <div class="container reveal">
         <h2>
           <span class="lang lang-en">Skills &amp; Technologies</span>
@@ -737,28 +727,27 @@
 
         <p class="section-intro">
           <span class="lang lang-en">
-            I like projects that combine mechanical design, electronics and code.
+            I like projects that combine mechanical design, electronics and code. Here are some of the tools I use most often.
           </span>
           <span class="lang lang-fr">
-            J’aime les projets qui combinent conception mécanique, électronique et code.
+            J’aime les projets qui combinent conception mécanique, électronique et code. Voici quelques outils que j’utilise souvent.
           </span>
         </p>
 
-        <div class="skills-pill-groups">
-
-          <div class="skills-row">
+        <div class="skills-pills">
+          <div class="skills-column">
             <h3>
               <span class="lang lang-en">Mechanical</span>
               <span class="lang lang-fr">Mécanique</span>
             </h3>
-            <div class="skill-pill-wrap">
+            <div class="pill-row">
               <span class="skill-pill">
-                <span class="lang lang-en">CAD modeling in SolidWorks</span>
-                <span class="lang lang-fr">Modélisation CAO dans SolidWorks</span>
+                <span class="lang lang-en">CAD modeling (SolidWorks)</span>
+                <span class="lang lang-fr">Modélisation CAO (SolidWorks)</span>
               </span>
               <span class="skill-pill">
-                <span class="lang lang-en">Mechanisms and motion systems</span>
-                <span class="lang lang-fr">Mécanismes et systèmes de mouvement</span>
+                <span class="lang lang-en">Mechanisms and linkages</span>
+                <span class="lang lang-fr">Mécanismes et liaisons</span>
               </span>
               <span class="skill-pill">
                 <span class="lang lang-en">3D printing oriented design</span>
@@ -767,19 +756,19 @@
             </div>
           </div>
 
-          <div class="skills-row">
+          <div class="skills-column">
             <h3>
               <span class="lang lang-en">Electronics</span>
               <span class="lang lang-fr">Électronique</span>
             </h3>
-            <div class="skill-pill-wrap">
+            <div class="pill-row">
               <span class="skill-pill">
-                <span class="lang lang-en">Arduino projects</span>
-                <span class="lang lang-fr">Projets avec Arduino</span>
+                <span class="lang lang-en">Arduino</span>
+                <span class="lang lang-fr">Arduino</span>
               </span>
               <span class="skill-pill">
-                <span class="lang lang-en">Sensors: HC SR04, load cells, limit switches</span>
-                <span class="lang lang-fr">Capteurs: HC SR04, cellules de charge, fins de course</span>
+                <span class="lang lang-en">Sensors (HC SR04, load cells)</span>
+                <span class="lang lang-fr">Capteurs (HC SR04, cellules de charge)</span>
               </span>
               <span class="skill-pill">
                 <span class="lang lang-en">Servos and stepper motors</span>
@@ -788,60 +777,69 @@
             </div>
           </div>
 
-          <div class="skills-row">
+          <div class="skills-column">
             <h3>
               <span class="lang lang-en">Software</span>
               <span class="lang lang-fr">Logiciels</span>
             </h3>
-            <div class="skill-pill-wrap">
+            <div class="pill-row">
               <span class="skill-pill">
                 <span class="lang lang-en">C++ basics</span>
                 <span class="lang lang-fr">Bases en C++</span>
               </span>
               <span class="skill-pill">
-                <span class="lang lang-en">Xcode and VS Code</span>
-                <span class="lang lang-fr">Xcode et VS Code</span>
+                <span class="lang lang-en">Xcode, VS Code</span>
+                <span class="lang lang-fr">Xcode, VS Code</span>
               </span>
               <span class="skill-pill">
-                <span class="lang lang-en">GitHub for version control</span>
-                <span class="lang lang-fr">GitHub pour le contrôle de version</span>
+                <span class="lang lang-en">GitHub version control</span>
+                <span class="lang lang-fr">Contrôle de version GitHub</span>
               </span>
             </div>
           </div>
 
-          <div class="skills-row">
+          <div class="skills-column">
             <h3>
               <span class="lang lang-en">Maker Tools</span>
               <span class="lang lang-fr">Outils de fabrication</span>
             </h3>
-            <div class="skill-pill-wrap">
+            <div class="pill-row">
               <span class="skill-pill">
                 <span class="lang lang-en">FDM 3D printing</span>
                 <span class="lang lang-fr">Impression 3D FDM</span>
               </span>
               <span class="skill-pill">
-                <span class="lang lang-en">Prototyping and iteration</span>
-                <span class="lang lang-fr">Prototypage et itération</span>
+                <span class="lang lang-en">Hand tools & assembly</span>
+                <span class="lang lang-fr">Outils manuels et assemblage</span>
               </span>
               <span class="skill-pill">
-                <span class="lang lang-en">Basic hand tools and assembly</span>
-                <span class="lang lang-fr">Outils manuels et assemblage</span>
+                <span class="lang lang-en">Rapid prototyping</span>
+                <span class="lang lang-fr">Prototypage rapide</span>
               </span>
             </div>
           </div>
         </div>
+      </div>
+    </section>
 
-        <div class="cv-bottom">
+    <!-- CV Call to Action -->
+    <section id="cv-cta" class="section cv-section">
+      <div class="container reveal">
+        <div class="cv-inner">
+          <p class="cv-text">
+            <span class="lang lang-en">If you would like more details about my background, you can download my CV.</span>
+            <span class="lang lang-fr">Pour en savoir plus sur mon parcours, vous pouvez télécharger mon CV.</span>
+          </p>
           <a href="assets/files/JulienDutil_CV.pdf" download class="btn primary-btn">
-            <span class="lang lang-en">View CV</span>
-            <span class="lang lang-fr">Voir mon CV</span>
+            <span class="lang lang-en">Download CV</span>
+            <span class="lang lang-fr">Télécharger mon CV</span>
           </a>
         </div>
       </div>
     </section>
 
     <!-- Contact -->
-    <section id="contact" class="section">
+    <section id="contact" class="section alt-bg">
       <div class="container reveal">
         <h2>
           <span class="lang lang-en">Contact</span>
