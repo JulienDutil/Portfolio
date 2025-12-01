@@ -77,20 +77,20 @@ if (timeline) {
   timeline.addEventListener("wheel", e => {
     if (e.deltaY === 0) return;
     e.preventDefault();
-    timeline.scrollLeft += e.deltaY * 0.6;
+    timeline.scrollLeft += e.deltaY * 0.7;
   });
 }
 
-// Lightbox for project gallery
+// Lightbox for gallery images
 const lightbox = document.getElementById("lightbox");
 const lightboxImg = document.getElementById("lightbox-img");
 const lightboxBackdrop = lightbox ? lightbox.querySelector(".lightbox-backdrop") : null;
 
 if (lightbox && lightboxImg && lightboxBackdrop) {
-  document.querySelectorAll(".project-thumb").forEach(img => {
-    img.addEventListener("click", () => {
-      const fullSrc = img.getAttribute("data-full") || img.src;
-      lightboxImg.src = fullSrc;
+  document.querySelectorAll(".project-thumb").forEach(thumb => {
+    thumb.addEventListener("click", () => {
+      const src = thumb.getAttribute("data-full") || thumb.src;
+      lightboxImg.src = src;
       lightbox.classList.add("visible");
     });
   });
