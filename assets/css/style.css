@@ -751,6 +751,15 @@ body.lang-fr-active .lang-fr {
   font-weight: 700;
 }
 
+.about-text-block,
+.about-text-block p {
+  color: var(--text-main) !important;
+}
+
+.about-text-block h3 {
+  color: var(--text-main) !important;
+}
+
 /* RESPONSIVE */
 @media (max-width: 880px) {
   .about-wrapper {
