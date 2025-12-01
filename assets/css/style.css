@@ -656,8 +656,8 @@ h1, h2, h3, h4 {
 
 /* CV bottom button */
 .cv-bottom {
-  margin-top: 0;
-  margin-bottom: 0rem;
+  margin-top: 1;
+  margin-bottom: 1rem;
   text-align: center;
 }
 
@@ -668,7 +668,7 @@ h1, h2, h3, h4 {
 }
 
 #contact {
-  padding-top: 0rem;
+  padding-top: 1rem;
 }
 
 /* LANGUAGE CONTROL */
