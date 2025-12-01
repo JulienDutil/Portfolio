@@ -196,6 +196,10 @@ h1, h2, h3, h4 {
   padding: 4rem 0;
 }
 
+#skills.section {
+  padding-bottom: 1.5rem; /* was 4rem — gives space to center the button */
+}
+
 .section.alt-bg {
   background: transparent;
 }
@@ -488,7 +492,7 @@ h1, h2, h3, h4 {
 
 .timeline-line {
   position: absolute;
-  top: calc(50% + 8px);
+  top: calc(50% + 10px);
   transform: translateY(-50%);
   left: 0;
   height: 3px;
@@ -632,7 +636,7 @@ h1, h2, h3, h4 {
 
 /* CV bottom button */
 .cv-bottom {
-  margin: 3.5rem 0 4rem; /* top | left-right | bottom */
+  margin: 2.8rem 0 3.2rem;
   text-align: center;
 }
 
