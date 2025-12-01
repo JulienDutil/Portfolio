@@ -197,22 +197,440 @@ h1, h2, h3, h4 {
 }
 
 #skills {
-  padding: 2rem 0;
+  padding: 2rem 0; 
 }
 
-/* Skills layout */
+.section.alt-bg {
+  background: transparent;
+}
+
+.section-intro {
+  margin: 0.4rem 0 1.8rem;
+  max-width: 650px;
+  color: var(--text-muted);
+}
+
+/* HERO */
+.hero {
+  padding: 5rem 0 3rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.hero-inner {
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+  width: 100%;
+}
+
+.hero-title {
+  font-size: clamp(2.8rem, 6vw, 3.6rem);
+  font-weight: 700;
+  margin: 0 auto;
+  color: var(--text-main);
+}
+
+/* ABOUT */
+.about-wrapper {
+  display: grid;
+  grid-template-columns: 1.3fr 1fr;
+  gap: 1.8rem;
+  align-items: start;
+  margin-top: 1.8rem;
+}
+
+.about-text-block {
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: var(--text-muted);
+}
+
+.about-text-block h3,
+.about-text-block h2 {
+  color: var(--text-main);
+}
+
+.about-intro {
+  color: var(--text-muted);
+}
+
+.about-card-grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.about-card {
+  background: var(--surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  padding: 1rem 1.2rem;
+  transition: var(--transition-fast);
+}
+
+.about-card:hover {
+  border-color: var(--accent);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.5);
+  transform: translateY(-2px);
+}
+
+.about-card h4 {
+  margin: 0 0 0.4rem;
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--text-main);
+}
+
+.about-card p {
+  margin: 0;
+  color: var(--text-muted);
+  font-size: 0.98rem;
+}
+
+/* FEATURED GRID */
+.featured-grid {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.3rem;
+}
+
+.featured-card {
+  background: var(--surface);
+  border-radius: var(--radius-lg);
+  padding: 1.1rem;
+  border: 1px solid var(--border-subtle);
+  cursor: pointer;
+  transition: var(--transition-fast);
+}
+
+.featured-card h3 {
+  margin: 0.7rem 0 0.4rem;
+}
+
+.featured-card p {
+  margin: 0;
+  color: var(--text-muted);
+  font-size: 0.98rem;
+}
+
+.featured-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--accent);
+  box-shadow: 0 14px 32px rgba(0, 0, 0, 0.5);
+}
+
+/* UPCOMING */
+.upcoming-box {
+  margin-top: 1.7rem;
+  display: grid;
+  grid-template-columns: 1.5fr 2fr;
+  gap: 1.5rem;
+  background: var(--surface);
+  padding: 1.4rem;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border-subtle);
+}
+
+.upcoming-text h3 {
+  margin-top: 0;
+}
+
+.upcoming-actions {
+  margin-top: 1.2rem;
+}
+
+.upcoming-actions .btn {
+  min-height: 3rem; /* helps keep spacing more consistent between EN and FR */
+}
+
+/* Accordion */
+#project-accordion-container {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+}
+
+.project-accordion {
+  background: var(--surface);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border-subtle);
+  overflow: hidden;
+  transition: var(--transition-fast);
+}
+
+.project-accordion.open {
+  border-color: var(--accent);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.5);
+}
+
+.accordion-header {
+  padding: 1.1rem 1.3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  gap: 1rem;
+}
+
+.accordion-header h3 {
+  margin: 0 0 0.3rem;
+}
+
+.accordion-header .year {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+}
+
+.accordion-body {
+  max-height: 0;
+  overflow: hidden;
+  padding: 0 1.3rem;
+  transition: max-height var(--transition-med), padding var(--transition-med);
+}
+
+.project-accordion.open .accordion-body {
+  padding: 1.2rem 1.3rem 1.6rem;
+  max-height: 4000px;
+}
+
+/* Project content */
+.project-main {
+  display: grid;
+  grid-template-columns: minmax(0, 1.3fr) minmax(0, 1.7fr);
+  gap: 1.4rem;
+  margin-bottom: 1.2rem;
+  align-items: start;
+}
+
+.project-main-media img {
+  width: 100%;
+  border-radius: var(--radius-lg);
+}
+
+.project-main-content p {
+  margin-top: 0;
+  color: var(--text-main);
+}
+
+.project-points {
+  padding-left: 1.2rem;
+  margin: 0.9rem 0 0;
+  color: var(--text-muted);
+  font-size: 0.98rem;
+}
+
+.project-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  gap: 0.8rem;
+}
+
+.project-thumb {
+  cursor: pointer;
+  border-radius: var(--radius-md);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  transition: var(--transition-fast);
+}
+
+.project-thumb:hover {
+  transform: translateY(-2px);
+  border-color: var(--accent);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.6);
+}
+
+.project-extra-media {
+  margin-top: 1.4rem;
+}
+
+.video-wrapper {
+  position: relative;
+  padding-top: 56.25%;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  border: 1px solid var(--border-subtle);
+}
+
+.video-wrapper iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/* Tags */
+.tag {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.25rem 0.7rem;
+  border-radius: var(--radius-pill);
+  font-size: 0.8rem;
+  border: 1px solid var(--accent-soft);
+  background: rgba(168, 132, 255, 0.14);
+  color: #e5ddff;
+}
+
+/* TIMELINE */
+#timeline .container {
+  overflow-x: auto;
+  padding-bottom: 1rem;
+}
+
+.timeline-horizontal {
+  display: flex;
+  gap: 3rem;
+  padding: 2.5rem 0 1.5rem;
+  position: relative;
+  width: max-content;
+  min-width: 100%;
+  overflow-x: auto;
+}
+
+.timeline-line {
+  position: absolute;
+  top: calc(50% + 9px);
+  transform: translateY(-50%);
+  left: 0;
+  height: 3px;
+  width: 100%;
+  background: linear-gradient(to right, #7e5aff, #a884ff, #c8b2ff);
+  opacity: 0.55;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.time-block {
+  position: relative;
+  min-width: 150px;
+  text-align: center;
+  z-index: 1;
+}
+
+.time-title {
+  margin: 0 0 0.5rem;
+  font-size: 1rem;
+}
+
+.time-dot {
+  width: 14px;
+  height: 14px;
+  margin: 0 auto;
+  border-radius: 50%;
+  background: var(--accent);
+  box-shadow: 0 0 10px rgba(168, 132, 255, 1);
+}
+
+.time-date {
+  margin-top: 0.4rem;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+/* CONTACT */
+.contact-list {
+  list-style: none;
+  margin-top: 1.4rem;
+  padding: 0;
+  display: grid;
+  gap: 0.7rem;
+}
+
+.contact-list span:first-child {
+  display: inline-block;
+  min-width: 80px;
+  color: var(--text-muted);
+  font-size: 0.95rem;
+}
+
+.contact-list a {
+  color: #d1c6ff;
+  text-decoration: none;
+}
+
+.contact-list a:hover {
+  text-decoration: underline;
+}
+
+/* LIGHTBOX */
+.lightbox {
+  position: fixed;
+  inset: 0;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 2000;
+}
+
+.lightbox.visible {
+  display: flex;
+}
+
+.lightbox-backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.75);
+}
+
+.lightbox-content {
+  position: relative;
+  max-width: 90%;
+  max-height: 90%;
+  z-index: 1;
+}
+
+.lightbox-content img {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: var(--radius-lg);
+}
+
+/* SKILLS */
 .skills-pill-groups {
   margin-top: 2rem;
   display: grid;
   gap: 1.6rem;
   grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-  justify-items: start;
 }
 
+.skills-pill-groups {
+  justify-items: start;      /* ensure consistent alignment */
+}
+
+#skills .skills-pill-groups {
+  margin-bottom: 4rem;   /* exact spacing above the CV button */
+}
+
+#skills .container {
+  padding-left: 1.4rem;
+  padding-right: 1.4rem;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1040px;         /* force same width as all other sections */
+}
+
+#skills {
+  text-align: left;          /* prevents centering behavior */
+}
+
+/* Soft glow pills (Option 1) */
 .skills-pill-group {
   display: flex;
   flex-direction: column;
   gap: 0.7rem;
+}
+
+.skills-pill-group h3 {
+  margin-bottom: 0.2rem;
+}
+
+.skills-pill-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
 }
 
 .skill-pill {
@@ -226,6 +644,7 @@ h1, h2, h3, h4 {
   font-size: 0.95rem;
   box-shadow: 0 0 12px rgba(168, 132, 255, 0.22);
   transition: var(--transition-fast);
+  cursor: default;
 }
 
 .skill-pill:hover {
@@ -235,8 +654,10 @@ h1, h2, h3, h4 {
   transform: translateY(-2px);
 }
 
-/* CV button */
+/* CV bottom button */
 .cv-bottom {
+  margin-top: 0;        /* let the pill-group margin control spacing */
+  margin-bottom: 2rem; /* exact spacing before Contact */
   text-align: center;
 }
 
@@ -246,26 +667,17 @@ h1, h2, h3, h4 {
   transform: scale(1.05);
 }
 
-/* FINAL SPACING — Option B midpoint */
-#skills {
-  padding-bottom: 4rem !important;
-}
-
-#skills .skills-pill-groups {
-  margin-bottom: 3rem !important;
-}
-
-#skills .cv-bottom {
-  margin-top: 2.5rem !important;
-  margin-bottom: 0 !important;
-}
-
-/* Contact spacing */
 #contact {
   padding-top: 2rem;
 }
 
-/* Reveal */
+/* LANGUAGE CONTROL */
+.lang { display: inline; }
+.lang-fr { display: none; }
+body.lang-fr-active .lang-en { display: none; }
+body.lang-fr-active .lang-fr { display: inline; }
+
+/* REVEAL */
 .reveal {
   opacity: 0;
   transform: translateY(18px);
@@ -277,7 +689,7 @@ h1, h2, h3, h4 {
   transform: translateY(0);
 }
 
-/* Footer */
+/* FOOTER */
 .site-footer {
   padding: 1.8rem 0 2.2rem;
   border-top: 1px solid rgba(255, 255, 255, 0.05);
@@ -292,39 +704,86 @@ h1, h2, h3, h4 {
   color: var(--text-muted);
 }
 
-/* Responsive */
+/* FINAL SPACING OVERRIDES */
+#skills .skills-pill-groups {
+  margin-bottom: 2rem;   /* Skills → CV */
+}
+
+.cv-bottom {
+  margin-top: 0;
+  margin-bottom: 2rem;   /* CV → Contact */
+}
+
+#contact {
+  padding-top: 1rem;     /* reduce default contact padding */
+}
+
+#skills {
+  padding-bottom: 7rem !important;
+}
+
+.cv-bottom {
+  margin-top: 3rem;  /* optional */
+}
+
+/* RESPONSIVE */
 @media (max-width: 880px) {
   .about-wrapper {
     grid-template-columns: 1fr;
   }
+
   .project-main {
     grid-template-columns: 1fr;
   }
+
   .upcoming-box {
     grid-template-columns: 1fr;
   }
+
   .main-nav {
     flex-wrap: wrap;
     justify-content: center;
   }
 }
 
+/* FORCE-FIX CONTACT SPACING */
+#contact.section {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+/* Your custom spacing override BELOW */
+.cv-bottom {
+  margin-top: 3.5rem;
+  margin-bottom: 3rem;
+}
+
+#skills .cv-bottom {
+  padding-top: 5rem !important;
+  padding-bottom: 3rem !important;
+}
+
 @media (max-width: 600px) {
   .timeline-horizontal {
     gap: 2rem;
   }
+
   .header-inner {
     flex-wrap: wrap;
   }
+
   .header-actions {
     order: 3;
   }
+
   .logo {
     order: 1;
   }
+
   .main-nav {
     order: 2;
   }
+
   .upcoming-box img {
     max-height: 220px;
     object-fit: cover;
