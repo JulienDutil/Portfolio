@@ -739,6 +739,17 @@ body.lang-fr-active .lang-fr { display: inline; }
   }
 }
 
+/* FORCE-FIX CONTACT SPACING */
+#contact.section {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+.cv-bottom {
+  margin-bottom: 2rem !important;
+}
+
+
 @media (max-width: 600px) {
   .timeline-horizontal {
     gap: 2rem;
