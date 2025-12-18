@@ -19,14 +19,27 @@ if ("IntersectionObserver" in window) {
   revealElements.forEach(el => el.classList.add("visible"));
 }
 
-//Header collapse on scroll
+//Dynamic Header
 const header = document.querySelector('.site-header');
+const aboutSection = document.querySelector('#about');
 
 window.addEventListener('scroll', () => {
-  if (window.scrollY > 60) {
+  const scrollY = window.scrollY;
+  const aboutBottom =
+    aboutSection.offsetTop + aboutSection.offsetHeight;
+
+  // Collapse header after small scroll
+  if (scrollY > 60) {
     header.classList.add('scrolled');
   } else {
     header.classList.remove('scrolled');
+  }
+
+  // Hide header completely past About section
+  if (scrollY > aboutBottom) {
+    header.classList.add('hidden');
+  } else {
+    header.classList.remove('hidden');
   }
 });
 
