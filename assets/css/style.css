@@ -184,6 +184,22 @@ h1, h2, h3, h4 {
   border-radius: 50%;
 }
 
+.lang-toggle .lang-icon {
+  display: none;
+  width: 20px;
+  height: 20px;
+}
+
+/* Site currently in French → show EN icon */
+body.lang-fr-active .lang-toggle .en {
+  display: inline;
+}
+
+/* Site currently in English → show FR icon */
+body:not(.lang-fr-active) .lang-toggle .fr {
+  display: inline;
+}
+
 /* Buttons */
 .btn {
   display: inline-flex;
