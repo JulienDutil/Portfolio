@@ -89,11 +89,21 @@ if (savedLang === "fr") {
   body.classList.remove("lang-fr-active");
 }
 
+function updateLangToggleLabel() {
+  const isFrench = body.classList.contains("lang-fr-active");
+  langToggle.textContent = isFrench ? "EN" : "FR";
+}
+
 if (langToggle) {
+  updateLangToggleLabel();
+
   langToggle.addEventListener("click", () => {
     body.classList.toggle("lang-fr-active");
+
     const lang = body.classList.contains("lang-fr-active") ? "fr" : "en";
     localStorage.setItem("lang", lang);
+
+    updateLangToggleLabel();
   });
 }
 
