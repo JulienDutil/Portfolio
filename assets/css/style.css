@@ -133,6 +133,37 @@ h1, h2, h3, h4 {
   gap: 0.6rem;
 }
 
+/* Collapsing header state */
+.site-header.scrolled {
+  background: rgba(26, 19, 64, 0.95);
+  backdrop-filter: blur(18px);
+}
+
+.site-header.scrolled .header-inner {
+  padding: 0.4rem 0;
+}
+
+.site-header.scrolled .logo-mark {
+  transform: scale(0.9);
+}
+
+.site-header.scrolled .logo-text {
+  font-size: 1rem;
+}
+
+.site-header.scrolled .btn.small {
+  padding: 0.35rem 0.9rem;
+  font-size: 0.9rem;
+}
+
+.site-header,
+.header-inner,
+.logo-mark,
+.logo-text,
+.btn {
+  transition: 0.25s ease;
+}
+
 /* Language toggle */
 .lang-toggle-btn {
   border: none;
