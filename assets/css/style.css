@@ -471,8 +471,9 @@ h1, h2, h3, h4 {
 }
 
 /* Timeline */
-#timeline .container {
+.timeline-scroll {
   overflow-x: auto;
+  overflow-y: hidden;
   padding-bottom: 1rem;
 }
 
@@ -483,7 +484,6 @@ h1, h2, h3, h4 {
   position: relative;
   width: max-content;
   min-width: 100%;
-  overflow-x: auto;
 }
 
 .timeline-line {
