@@ -89,11 +89,6 @@ if (savedLang === "fr") {
   body.classList.remove("lang-fr-active");
 }
 
-function updateLangToggleLabel() {
-  const isFrench = body.classList.contains("lang-fr-active");
-  langToggle.textContent = isFrench ? "EN" : "FR";
-}
-
 if (langToggle) {
   updateLangToggleLabel();
 
