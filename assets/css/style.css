@@ -526,6 +526,26 @@ h1, h2, h3, h4 {
   color: var(--text-muted);
 }
 
+/* Timeline scrollbar styling */
+.timeline-scroll {
+  scrollbar-width: thin;
+  scrollbar-color: #7e5aff transparent;
+}
+
+/* WebKit browsers */
+.timeline-scroll::-webkit-scrollbar {
+  height: 8px;
+}
+
+.timeline-scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.timeline-scroll::-webkit-scrollbar-thumb {
+  background: linear-gradient(to right, #7e5aff, #a884ff);
+  border-radius: 10px;
+}
+
 /* Contact */
 .contact-list {
   list-style: none;
