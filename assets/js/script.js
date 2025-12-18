@@ -19,6 +19,17 @@ if ("IntersectionObserver" in window) {
   revealElements.forEach(el => el.classList.add("visible"));
 }
 
+//Header collapse on scroll
+const header = document.querySelector('.site-header');
+
+window.addEventListener('scroll', () => {
+  if (window.scrollY > 60) {
+    header.classList.add('scrolled');
+  } else {
+    header.classList.remove('scrolled');
+  }
+});
+
 // Accordion logic
 document.querySelectorAll(".project-accordion").forEach(item => {
   const header = item.querySelector(".accordion-header");
