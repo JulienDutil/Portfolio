@@ -362,14 +362,15 @@ h1, h2, h3, h4 {
 }
 
 .accordion-body {
-  opacity: 0;
-  transform: translateY(-6px);
-  transition: opacity 0.3s ease, transform 0.3s ease;
+  max-height: 0;
+  overflow: hidden;
+  padding: 0 1.3rem;
+  transition: max-height var(--transition-med), padding var(--transition-med);
 }
 
 .project-accordion.open .accordion-body {
-  opacity: 1;
-  transform: translateY(0);
+  padding: 1.2rem 1.3rem 1.6rem;
+  max-height: 4000px;
 }
 
 /* Project content */
