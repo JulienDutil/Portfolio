@@ -362,15 +362,13 @@ h1, h2, h3, h4 {
 }
 
 .accordion-body {
-  max-height: 0;
-  overflow: hidden;
-  padding: 0 1.3rem;
-  transition: max-height var(--transition-med), padding var(--transition-med);
+  opacity: 0;
+  transform: translateY(-6px);
 }
 
 .project-accordion.open .accordion-body {
-  padding: 1.2rem 1.3rem 1.6rem;
-  max-height: 4000px;
+  opacity: 1;
+  transform: translateY(0);
 }
 
 /* Project content */
@@ -701,3 +699,20 @@ body.lang-fr-active .lang-fr {
     object-fit: cover;
   }
 }
+
+@media (max-width: 900px) {
+  .about-wrapper,
+  .project-main,
+  .upcoming-box {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-title {
+    font-size: 2.2rem;
+  }
+
+  .main-nav {
+    display: none;
+  }
+}
+
