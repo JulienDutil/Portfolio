@@ -164,6 +164,12 @@ h1, h2, h3, h4 {
   transition: 0.25s ease;
 }
 
+/* Fully hidden header */
+.site-header.hidden {
+  transform: translateY(-100%);
+  opacity: 0;
+}
+
 /* Language toggle */
 .lang-toggle-btn {
   border: none;
