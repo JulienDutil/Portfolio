@@ -364,6 +364,7 @@ h1, h2, h3, h4 {
 .accordion-body {
   opacity: 0;
   transform: translateY(-6px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
 .project-accordion.open .accordion-body {
@@ -699,20 +700,3 @@ body.lang-fr-active .lang-fr {
     object-fit: cover;
   }
 }
-
-@media (max-width: 900px) {
-  .about-wrapper,
-  .project-main,
-  .upcoming-box {
-    grid-template-columns: 1fr;
-  }
-
-  .hero-title {
-    font-size: 2.2rem;
-  }
-
-  .main-nav {
-    display: none;
-  }
-}
-
