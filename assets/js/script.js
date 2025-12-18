@@ -78,7 +78,6 @@ document.querySelectorAll(".featured-card").forEach(card => {
   });
 });
 
-// Language toggle logic
 const langToggle = document.getElementById("lang-toggle");
 const body = document.body;
 
@@ -90,15 +89,10 @@ if (savedLang === "fr") {
 }
 
 if (langToggle) {
-  updateLangToggleLabel();
-
   langToggle.addEventListener("click", () => {
     body.classList.toggle("lang-fr-active");
-
     const lang = body.classList.contains("lang-fr-active") ? "fr" : "en";
     localStorage.setItem("lang", lang);
-
-    updateLangToggleLabel();
   });
 }
 
