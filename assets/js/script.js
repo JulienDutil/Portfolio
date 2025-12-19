@@ -78,16 +78,24 @@ document.querySelectorAll(".featured-card").forEach(card => {
   });
 });
 
+/ Language toggle logic
 const langToggle = document.getElementById("lang-toggle");
 const body = document.body;
 
 const savedLang = localStorage.getItem("lang") || "en";
-if (savedLang === "fr") body.classList.add("lang-fr-active");
+if (savedLang === "fr") {
+  body.classList.add("lang-fr-active");
+} else {
+  body.classList.remove("lang-fr-active");
+}
 
-langToggle.addEventListener("click", () => {
-  body.classList.toggle("lang-fr-active");
-  localStorage.setItem("lang", body.classList.contains("lang-fr-active") ? "fr" : "en");
-});
+if (langToggle) {
+  langToggle.addEventListener("click", () => {
+    body.classList.toggle("lang-fr-active");
+    const lang = body.classList.contains("lang-fr-active") ? "fr" : "en";
+    localStorage.setItem("lang", lang);
+  });
+}
 
 // Horizontal timeline scroll with mouse wheel
 const timeline = document.querySelector(".timeline-horizontal");
