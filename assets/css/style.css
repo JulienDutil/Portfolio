@@ -390,10 +390,6 @@ h1, h2, h3, h4 {
   transition: background-color 0.25s ease;
 }
 
-.project-accordion.open .accordion-header {
-  background-color: rgba(255, 255, 255, 0.02);
-}
-
 .accordion-header h3 {
   margin: 0 0 0.3rem;
 }
