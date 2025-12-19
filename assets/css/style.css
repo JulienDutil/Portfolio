@@ -50,6 +50,12 @@ p {
   color: var(--text-muted);
 }
 
+/*Justify paragraphes*/
+p {
+  text-align: justify;
+  hyphens: auto;
+}
+
 /* Layout */
 .container {
   max-width: 1040px;
