@@ -48,10 +48,16 @@ img {
 
 p {
   color: var(--text-muted);
-  text-align: justify;
   text-justify: inter-word;
   text-align-last: left;
-  hyphens: auto;
+  hyphens: none;
+  word-spacing: 0.04em;
+}
+
+.about-text-block,
+.project-main-content,
+.section-intro {
+  max-width: 68ch;
 }
 
 /* Layout */
