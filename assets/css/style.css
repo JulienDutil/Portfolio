@@ -387,6 +387,11 @@ h1, h2, h3, h4 {
   align-items: center;
   cursor: pointer;
   gap: 1rem;
+  transition: background-color 0.25s ease;
+}
+
+.project-accordion.open .accordion-header {
+  background-color: rgba(255, 255, 255, 0.02);
 }
 
 .accordion-header h3 {
@@ -402,25 +407,19 @@ h1, h2, h3, h4 {
   max-height: 0;
   overflow: hidden;
   padding: 0 1.3rem;
-  opacity: 0;  /* Ensure opacity is 0 by default for smooth closing */
+  opacity: 0;
   transition:
-    max-height 0.6s cubic-bezier(0.4, 0, 0.2, 1), /* Animate max-height only */
+    max-height 0.65s cubic-bezier(0.4, 0, 0.2, 1),
+    opacity 0.35s ease,
     padding 0.35s ease;
 }
 
 .project-accordion.open .accordion-body {
-  max-height: 1800px;  /* Limit the height */
-  padding: 1.2rem 1.3rem 1.6rem;  /* Provide appropriate padding */
-  opacity: 1;  /* Fade content in after max-height reaches its limit */
+  max-height: 1800px;
+  padding: 1.2rem 1.3rem 1.6rem;
+  opacity: 1;
 }
 
-.project-accordion:not(.open) .accordion-body {
-  max-height: 0;  /* Collapse the body smoothly */
-  opacity: 0;  /* Fade out only after max-height reaches zero */
-  padding: 0 1.3rem; /* Reset padding */
-}
-
-/* Content inside accordion body fades in smoothly */
 .accordion-body > * {
   opacity: 0;
   transform: translateY(4px);
