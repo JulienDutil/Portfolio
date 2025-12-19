@@ -50,6 +50,10 @@ p {
   color: var(--text-muted);
 }
 
+.project-accordion p {
+  text-align: justify;
+}
+
 /* Layout */
 .container {
   max-width: 1040px;
