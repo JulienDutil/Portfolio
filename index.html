@@ -6,7 +6,78 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="icon" href="assets/img/favicon.png">
+
+  <!-- Adding custom CSS inside a <style> tag -->
+  <style>
+    /* Default styles for mobile (mobile-first approach) */
+    .project-accordion {
+      font-size: 14px;
+      padding: 10px;
+    }
+
+    .project-main-img {
+      width: 100%;
+      height: auto;
+    }
+
+    .video-thumbnail {
+      width: 100%;
+      height: auto;
+      cursor: pointer;
+      border-radius: 8px;
+    }
+
+    .project-gallery {
+      display: flex;
+      flex-direction: column;
+      align-items: center; /* Stack gallery items vertically */
+    }
+
+    .project-thumb {
+      margin-bottom: 10px;
+      width: 100%; /* Full width on mobile */
+      max-width: 300px; /* Limit max size for thumbnails */
+      height: auto;
+    }
+
+    /* Styles for tablets and larger screens (>= 768px) */
+    @media (min-width: 768px) {
+      .project-accordion {
+        font-size: 16px; /* Larger font size for desktops */
+        padding: 20px;
+      }
+
+      .project-main-media {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+      }
+
+      .project-main-img {
+        width: 45%; /* Adjust image size for desktop */
+        height: auto;
+      }
+
+      .project-gallery {
+        display: flex;
+        flex-direction: row; /* Arrange gallery items in a row on desktop */
+        justify-content: space-between;
+      }
+
+      .project-thumb {
+        width: 22%; /* Thumbnails are smaller and aligned horizontally */
+        margin-right: 10px;
+      }
+
+      .video-thumbnail {
+        width: 50%; /* Adjust thumbnail size for desktop */
+        height: auto;
+        margin-top: 20px;
+      }
+    }
+  </style>
 </head>
+
 <body>
   <!-- Header -->
   <header class="site-header">
