@@ -50,10 +50,6 @@ p {
   color: var(--text-muted);
 }
 
-.project-accordion p {
-  text-align: justify;
-}
-
 /* Layout */
 .container {
   max-width: 1040px;
@@ -414,6 +410,11 @@ h1, h2, h3, h4 {
     padding 0.35s ease;
 }
 
+/* Add justification to paragraphs inside accordion */
+.project-accordion .accordion-body p {
+  text-align: justify;
+}
+
 .project-accordion.open .accordion-body {
   max-height: 1800px;
   padding: 1.2rem 1.3rem 1.6rem;
@@ -430,6 +431,7 @@ h1, h2, h3, h4 {
   opacity: 1;
   transform: translateY(0);
 }
+
 
 /* Project content */
 .project-main {
