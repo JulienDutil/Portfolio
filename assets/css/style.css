@@ -48,6 +48,10 @@ img {
 
 p {
   color: var(--text-muted);
+  text-align: justify;
+  text-justify: inter-word;
+  text-align-last: left;
+  hyphens: auto;
 }
 
 /* Layout */
