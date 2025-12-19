@@ -170,13 +170,20 @@ h1, h2, h3, h4 {
   opacity: 0;
 }
 
-/* Hide both icons by default */
-.lang-toggle img {
-  display: none;
+/* Language toggle */
+.lang-toggle-btn {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  padding: 0;
+}
+
+.lang-toggle-btn img {
   width: 24px;
   height: 24px;
   border-radius: 50%;
 }
+
 
 /* Site in French → show EN icon */
 body.lang-fr-active .lang-toggle .lang-icon.en {
