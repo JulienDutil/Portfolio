@@ -530,6 +530,10 @@ h1, h2, h3, h4 {
   z-index: 1;
 }
 
+.time-block p {
+  text-align: center;
+}
+
 .time-title {
   margin: 0 0 0.5rem;
   font-size: 1rem;
