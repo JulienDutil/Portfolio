@@ -184,17 +184,6 @@ h1, h2, h3, h4 {
   border-radius: 50%;
 }
 
-
-/* Site in French → show EN icon */
-body.lang-fr-active .lang-toggle .lang-icon.en {
-  display: inline;
-}
-
-/* Site in English → show FR icon */
-body:not(.lang-fr-active) .lang-toggle .lang-icon.fr {
-  display: inline;
-}
-
 /* Buttons */
 .btn {
   display: inline-flex;
