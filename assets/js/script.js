@@ -78,7 +78,7 @@ document.querySelectorAll(".featured-card").forEach(card => {
   });
 });
 
-/ Language toggle logic
+// Language toggle logic
 const langToggle = document.getElementById("lang-toggle");
 const body = document.body;
 
