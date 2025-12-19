@@ -387,11 +387,7 @@ h1, h2, h3, h4 {
   align-items: center;
   cursor: pointer;
   gap: 1rem;
-  transition: background-color 0.25s ease;
-}
-
-.project-accordion.open .accordion-header {
-  background-color: rgba(255, 255, 255, 0.02);
+  /* Removed the background-color transition */
 }
 
 .accordion-header h3 {
@@ -431,6 +427,11 @@ h1, h2, h3, h4 {
   transform: translateY(0);
 }
 
+/* Fix to prevent janky closing animation */
+.project-accordion:not(.open) .accordion-body {
+  max-height: 0; /* Ensure the body collapses correctly */
+  opacity: 0; /* Ensures opacity is zero immediately after closing */
+}
 
 /* Project content */
 .project-main {
