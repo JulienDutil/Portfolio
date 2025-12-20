@@ -460,9 +460,17 @@ h1, h2, h3, h4 {
 }
 
 .project-gallery {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  display: flex;
   gap: 0.8rem;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-behavior: smooth;
+
+  cursor: grab;
+}
+
+.project-gallery.dragging {
+  cursor: grabbing;
 }
 
 .project-thumb {
