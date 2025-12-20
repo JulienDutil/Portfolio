@@ -485,6 +485,16 @@ h1, h2, h3, h4 {
   margin-top: 1.4rem;
 }
 
+.project-points {
+  list-style-type: disc;        /* turn bullets back on */
+  list-style-position: outside; /* normal bullet placement */
+  padding-left: 1.5rem;         /* ensure bullets are visible */
+}
+
+.project-points li {
+  margin-bottom: 0.45rem;
+}
+
 /* Tags */
 .tag {
   display: inline-flex;
