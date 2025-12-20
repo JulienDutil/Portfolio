@@ -462,15 +462,10 @@ h1, h2, h3, h4 {
 .project-gallery {
   display: flex;
   gap: 0.8rem;
+
   overflow-x: auto;
   overflow-y: hidden;
-  scroll-behavior: smooth;
-
-  cursor: grab;
-}
-
-.project-gallery.dragging {
-  cursor: grabbing;
+  padding-bottom: 0.6rem; /* space for scrollbar */
 }
 
 .project-thumb {
@@ -578,6 +573,26 @@ h1, h2, h3, h4 {
 }
 
 .timeline-scroll::-webkit-scrollbar-thumb {
+  background: linear-gradient(to right, #7e5aff, #a884ff);
+  border-radius: 10px;
+}
+
+/* Project gallery scrollbar styling */
+.project-gallery {
+  scrollbar-width: thin;
+  scrollbar-color: #7e5aff transparent;
+}
+
+/* WebKit browsers */
+.project-gallery::-webkit-scrollbar {
+  height: 8px;
+}
+
+.project-gallery::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.project-gallery::-webkit-scrollbar-thumb {
   background: linear-gradient(to right, #7e5aff, #a884ff);
   border-radius: 10px;
 }
