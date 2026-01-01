@@ -731,15 +731,15 @@ h1, h2, h3, h4 {
 
 /* Language */
 .lang {
+  display: none;
+}
+
+.lang-en {
   display: inline;
 }
 
-img.lang {
+img.lang-en {
   display: inline-block;
-}
-
-.lang-fr {
-  display: none;
 }
 
 body.lang-fr-active .lang-en {
