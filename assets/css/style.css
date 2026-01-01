@@ -362,7 +362,7 @@ h1, h2, h3, h4 {
 
 /* Project-title */
 .project-title {
-  display: inline-flex;
+  display: flex;
   align-items: center;
   gap: 0.5rem;
 }
@@ -370,7 +370,8 @@ h1, h2, h3, h4 {
 .project-title-arrow {
   width: 40px;
   height: 40px;
-  opacity: 0.65;
+  margin-left: 0.4rem;
+  opacity: 0.7;
   flex-shrink: 0;
   transition:
     transform 0.2s ease,
@@ -379,9 +380,14 @@ h1, h2, h3, h4 {
 }
 
 .accordion-header:hover .project-title-arrow {
-  transform: scale(1.15);
+  transform: scale(1.1);
   opacity: 1;
-  filter: drop-shadow(0 0 6px rgba(168, 132, 255, 0.7));
+  filter: drop-shadow(0 0 10px rgba(168, 132, 255, 0.8));
+}
+
+.accordion-header > div {
+  display: flex;
+  flex-direction: column;
 }
 
 /* Accordion */
