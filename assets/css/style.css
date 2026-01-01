@@ -379,12 +379,6 @@ h1, h2, h3, h4 {
     opacity 0.2s ease;
 }
 
-.accordion-header:hover .project-title-arrow {
-  transform: scale(1.1);
-  opacity: 1;
-  filter: drop-shadow(0 0 10px rgba(168, 132, 255, 0.8));
-}
-
 .accordion-header > div {
   display: flex;
   flex-direction: column;
@@ -532,9 +526,14 @@ h1, h2, h3, h4 {
   padding: 0.25rem 0.7rem;
   border-radius: var(--radius-pill);
   font-size: 0.8rem;
+  line-height: 1;
   border: 1px solid var(--accent-soft);
   background: rgba(168, 132, 255, 0.14);
   color: #e5ddff;
+
+  /* Fix for accordion header layout */
+  align-self: flex-start;
+  width: fit-content;
 }
 
 /* Timeline */
