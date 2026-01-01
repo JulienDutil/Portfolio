@@ -389,7 +389,6 @@ h1, h2, h3, h4 {
   filter:
     brightness(1.2)
     saturate(1.15)
-    drop-shadow(0 0 6px rgba(168, 132, 255, 0.6));
 }
 
 /* Accordion */
