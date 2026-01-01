@@ -344,7 +344,7 @@ h1, h2, h3, h4 {
 .upcoming-box {
   margin-top: 1.7rem;
   display: grid;
-  grid-template-columns: 1.5fr 2fr;
+  grid-template-columns: minmax(0, 1.5fr) minmax(0, 2fr);
   gap: 1.5rem;
   background: var(--surface);
   padding: 1.4rem;
@@ -358,6 +358,12 @@ h1, h2, h3, h4 {
 
 .upcoming-actions {
   margin-top: 1.2rem;
+}
+
+.upcoming-box img {
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
 
 /* Project-title */
