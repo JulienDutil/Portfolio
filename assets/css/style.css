@@ -734,6 +734,10 @@ h1, h2, h3, h4 {
   display: inline;
 }
 
+img.lang {
+  display: inline-block;
+}
+
 .lang-fr {
   display: none;
 }
@@ -744,6 +748,10 @@ body.lang-fr-active .lang-en {
 
 body.lang-fr-active .lang-fr {
   display: inline;
+}
+
+body.lang-fr-active img.lang-fr {
+  display: inline-block;
 }
 
 /* Reveal animation */
