@@ -520,6 +520,18 @@ h1, h2, h3, h4 {
   margin-top: 1.4rem;
 }
 
+.video-wrapper {
+  width: 100%;
+  max-width: 100%;
+}
+
+.video-thumbnail {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: var(--radius-md);
+}
+
 .project-points {
   list-style-type: disc;        /* turn bullets back on */
   list-style-position: outside; /* normal bullet placement */
