@@ -83,19 +83,40 @@ const langToggle = document.getElementById("lang-toggle");
 const body = document.body;
 
 const savedLang = localStorage.getItem("lang") || "en";
-if (savedLang === "fr") {
+const initialLang = savedLang === "fr" ? "fr" : "en";
+
+if (initialLang === "fr") {
   body.classList.add("lang-fr-active");
 } else {
   body.classList.remove("lang-fr-active");
 }
+
+// Update mailto on initial load
+updateMailtoLinks(initialLang);
 
 if (langToggle) {
   langToggle.addEventListener("click", () => {
     body.classList.toggle("lang-fr-active");
     const lang = body.classList.contains("lang-fr-active") ? "fr" : "en";
     localStorage.setItem("lang", lang);
+
+    updateMailtoLinks(lang);
   });
 }
+
+function updateMailtoLinks(lang) {
+  document.querySelectorAll(".notify-btn").forEach(link => {
+    const subject = encodeURIComponent(
+      link.dataset[lang === "fr" ? "subjectFr" : "subjectEn"]
+    );
+    const mailBody = encodeURIComponent(
+      link.dataset[lang === "fr" ? "bodyFr" : "bodyEn"]
+    );
+
+    link.href = `mailto:juliendutil@hotmail.com?subject=${subject}&body=${mailBody}`;
+  });
+}
+
 
 // Horizontal timeline scroll with mouse wheel
 const timeline = document.querySelector(".timeline-horizontal");
