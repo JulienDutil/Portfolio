@@ -432,14 +432,19 @@ h1, h2, h3, h4 {
 }
 
 .accordion-body {
-  max-height: 0;
-  overflow: hidden;
-  padding: 0 1.3rem;
+  display: grid;
+  grid-template-rows: 0fr;
   opacity: 0;
+  padding: 0 1.3rem;
   transition:
-    max-height 0.65s cubic-bezier(0.4, 0, 0.2, 1),
+    grid-template-rows 0.45s ease,
     opacity 0.35s ease,
     padding 0.35s ease;
+}
+
+.accordion-body > * {
+  overflow: hidden;
+  min-height: 0;
 }
 
 /* Add justification to paragraphs inside accordion */
@@ -448,9 +453,9 @@ h1, h2, h3, h4 {
 }
 
 .project-accordion.open .accordion-body {
-  max-height: none;
-  padding: 1.2rem 1.3rem 1.6rem;
+  grid-template-rows: 1fr;
   opacity: 1;
+  padding: 1.2rem 1.3rem 1.6rem;
 }
 
 .accordion-body > * {
