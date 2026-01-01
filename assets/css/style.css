@@ -384,6 +384,10 @@ h1, h2, h3, h4 {
   flex-direction: column;
 }
 
+.accordion-header:hover .project-title-arrow {
+  transform: scale(1.15);
+}
+
 /* Accordion */
 #project-accordion-container {
   margin-top: 2rem;
