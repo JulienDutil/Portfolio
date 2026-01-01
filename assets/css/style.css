@@ -494,15 +494,15 @@ h1, h2, h3, h4 {
 }
 
 .project-gallery {
-  display: flex;
-  gap: 0.8rem;
-
+  white-space: nowrap;
   overflow-x: auto;
   overflow-y: hidden;
-  padding-bottom: 0.6rem; /* space for scrollbar */
+  padding-bottom: 0.6rem;
 }
 
 .project-thumb {
+  display: inline-block;
+  margin-right: 0.8rem;
   cursor: pointer;
   border-radius: var(--radius-md);
   border: 1px solid rgba(255, 255, 255, 0.06);
@@ -514,6 +514,7 @@ h1, h2, h3, h4 {
   border-color: var(--accent);
   box-shadow: 0 10px 24px rgba(0, 0, 0, 0.6);
 }
+
 
 .project-extra-media {
   margin-top: 1.4rem;
