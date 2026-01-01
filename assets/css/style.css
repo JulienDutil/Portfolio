@@ -360,6 +360,24 @@ h1, h2, h3, h4 {
   margin-top: 1.2rem;
 }
 
+/* Project-title */
+.project-title {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.project-title-arrow {
+  width: 18px;
+  height: 18px;
+  opacity: 0.65;
+  flex-shrink: 0;
+}
+
+.accordion-header:hover .project-title-arrow {
+  opacity: 1;
+}
+
 /* Accordion */
 #project-accordion-container {
   margin-top: 2rem;
