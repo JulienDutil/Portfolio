@@ -352,12 +352,10 @@ h1, h2, h3, h4 {
   border: 1px solid var(--border-subtle);
 }
 
-.upcoming-text h3 {
-  margin-top: 0;
-}
-
-.upcoming-actions {
-  margin-top: 1.2rem;
+.upcoming-text {
+  min-width: 0;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
 .upcoming-box img {
