@@ -190,6 +190,7 @@ h1, h2, h3, h4 {
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
   border-radius: var(--radius-pill);
   border: 1px solid transparent;
   padding: 0.55rem 1.3rem;
@@ -197,9 +198,15 @@ h1, h2, h3, h4 {
   font-weight: 600;
   text-decoration: none;
   cursor: pointer;
-  white-space: nowrap;
+  white-space: normal;
   transition: var(--transition-fast);
-  line-height: 1.2;
+  line-height: 1.3;
+}
+
+.btn span {
+  white-space: normal;
+  max-width: 100%;
+  text-align: center;
 }
 
 .btn.small {
@@ -892,6 +899,11 @@ body.lang-fr-active img.lang-fr {
     max-height: 220px;
     object-fit: cover;
   }
+
+    .btn {
+    width: 100%;
+  }
 }
+
 
 
