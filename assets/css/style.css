@@ -373,6 +373,10 @@ h1, h2, h3, h4 {
   display: block;
 }
 
+.upcoming-actions {
+  margin-top: 1.25rem;
+}
+
 /* Project-title */
 .project-title {
   display: flex;
