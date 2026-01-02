@@ -198,8 +198,8 @@ h1, h2, h3, h4 {
   font-weight: 600;
   text-decoration: none;
   cursor: pointer;
+
   white-space: normal;
-  transition: var(--transition-fast);
   line-height: 1.3;
 }
 
