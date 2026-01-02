@@ -812,18 +812,16 @@ h1, h2, h3, h4 {
   display: none;
 }
 
-.lang-en {
+/* English (default) */
+body:not(.lang-fr-active) .lang-en {
   display: inline;
 }
 
-img.lang-en {
+body:not(.lang-fr-active) img.lang-en {
   display: inline-block;
 }
 
-body.lang-fr-active .lang-en {
-  display: none;
-}
-
+/* French */
 body.lang-fr-active .lang-fr {
   display: inline;
 }
