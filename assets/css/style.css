@@ -350,12 +350,14 @@ h1, h2, h3, h4 {
   padding: 1.4rem;
   border-radius: var(--radius-lg);
   border: 1px solid var(--border-subtle);
+  overflow: hidden;
 }
 
-.upcoming-text {
+.upcoming-text,
+.upcoming-text * {
   min-width: 0;
-  word-wrap: break-word;
-  overflow-wrap: break-word;
+  max-width: 100%;
+  word-break: break-word;
 }
 
 .upcoming-box img {
@@ -848,16 +850,15 @@ body.lang-fr-active img.lang-fr {
 
 /* Responsive */
 @media (max-width: 880px) {
-  .about-wrapper {
-    grid-template-columns: 1fr;
-  }
-
+  .about-wrapper,
   .project-main {
     grid-template-columns: 1fr;
   }
 
   .upcoming-box {
     grid-template-columns: 1fr;
+    padding: 1rem;
+    gap: 1rem;
   }
 
   .main-nav {
@@ -892,4 +893,5 @@ body.lang-fr-active img.lang-fr {
     object-fit: cover;
   }
 }
+
 
