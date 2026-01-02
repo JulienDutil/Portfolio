@@ -812,22 +812,30 @@ h1, h2, h3, h4 {
   display: none;
 }
 
-/* English (default) */
+/* ENGLISH (default) */
 body:not(.lang-fr-active) .lang-en {
   display: inline;
 }
 
 body:not(.lang-fr-active) img.lang-en {
-  display: inline-block;
+  display: block;
 }
 
-/* French */
+body:not(.lang-fr-active) .lang-fr {
+  display: none;
+}
+
+/* FRENCH */
 body.lang-fr-active .lang-fr {
   display: inline;
 }
 
 body.lang-fr-active img.lang-fr {
-  display: inline-block;
+  display: block;
+}
+
+body.lang-fr-active .lang-en {
+  display: none;
 }
 
 /* Reveal animation */
